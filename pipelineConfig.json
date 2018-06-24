@@ -1,6 +1,6 @@
 {
     "uri": "",
-    "ShaderStages": [],
+    "shaderStageConfigs": [],
     "VertexInput": "",
     "InputAssembly": "",
     "Tesselation": "",

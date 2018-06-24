@@ -1,7 +1,7 @@
 {
     "uri": "",
-    "Stage": "",
-    "Module": "",
-    "EntryPointName": "",
-    "SpecializationMapEntries": ""
+    "shaderStage": "",
+    "module": "",
+    "name": "",
+    "specializationMapEntries": ""
 }
