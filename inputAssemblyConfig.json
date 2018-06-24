@@ -1,5 +1,5 @@
 {
     "uri": "",
-    "Topology": "",
-    "PrimitiveRestartEnable": false
+    "primitiveTopology": "",
+    "primitiveRestartEnable": false
 }
