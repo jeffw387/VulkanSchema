@@ -1,0 +1,16 @@
+{
+    "uri": "",
+    "ShaderStages": [],
+    "VertexInput": "",
+    "InputAssembly": "",
+    "Tesselation": "",
+    "Viewport": "",
+    "Rasterization": "",
+    "Multisampling": "",
+    "DepthStencil": "",
+    "ColorBlending": "",
+    "DynamicStates": [],
+    "PipelineLayout": "",
+    "RenderPass": "",
+    "Subpass": 0
+}

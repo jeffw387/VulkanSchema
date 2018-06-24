@@ -1,0 +1,17 @@
+{
+    "uri": "",
+    "BlendEnable": false,
+    "SourceColorBlendFactor": "",
+    "DestinationColorBlendFactor": "",
+    "ColorBlendOp": "",
+    "SourceAlphaBlendFactor": "",
+    "DestinationAlphaBlendFactor": "",
+    "AlphaBlendOp": "",
+    "ColorWriteMask":
+    {
+        "R": false,
+        "G": false,
+        "B": false,
+        "A": false
+    }
+}

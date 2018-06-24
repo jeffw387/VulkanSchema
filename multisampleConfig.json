@@ -1,0 +1,9 @@
+{
+    "uri": "",
+    "SampleCount": "1",
+    "SampleShadingEnable": false,
+    "MinimumSampleShading": 0.0,
+    "SampleMask": "",
+    "AlphaToCoverageEnable": false,
+    "AlphaToOneEnable": false
+}
