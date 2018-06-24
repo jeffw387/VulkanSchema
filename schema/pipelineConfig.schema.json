@@ -54,6 +54,7 @@
         "uri",
         "shaderStageConfigs",
         "vertexInputConfig",
-        "inputAssemblyConfig"
+        "inputAssemblyConfig",
+        "tesselationConfig"
     ]
 }
