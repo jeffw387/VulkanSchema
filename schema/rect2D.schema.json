@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/rect2D.schema.json",
+    "type": "object",
+    "properties": {
+        "offset": {
+            "$ref": "offset2D.schema.json"
+        },
+        "extent": {
+            "$ref": "extent2D.schema.json"
+        }
+    }
+}

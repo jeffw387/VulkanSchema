@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/extent2D.schema.json",
+    "type": "object",
+    "properties": {
+        "width": {
+            "type": "integer"
+        },
+        "height": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "width",
+        "height"
+    ]
+}

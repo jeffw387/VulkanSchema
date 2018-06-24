@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/viewport.schema.json",
+    "type": "object",
+    "properties": {
+        "x": {
+            "type": "number"
+        },
+        "y": {
+            "type": "number"
+        },
+        "width": {
+            "type": "number"
+        },
+        "height": {
+            "type": "number"
+        },
+        "minDepth": {
+            "type": "number"
+        },
+        "maxDepth": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "x",
+        "y",
+        "width",
+        "height",
+        "minDepth",
+        "maxDepth"
+    ]
+}

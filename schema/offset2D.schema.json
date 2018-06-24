@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/offset2D.schema.json",
+    "type": "object",
+    "properties": {
+        "x": {
+            "type": "integer"
+        },
+        "y": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "x",
+        "y"
+    ]
+}

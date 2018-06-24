@@ -1,6 +1,5 @@
 {
     "uri": "",
-    "ViewportScissorCount": 0,
-    "Viewports": [],
-    "Scissors": []
+    "viewports": [],
+    "scissors": []
 }
