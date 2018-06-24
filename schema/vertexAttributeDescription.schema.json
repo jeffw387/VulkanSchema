@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/vertexAttributeDescription.schema.json",
+    "type": "object",
+    "properties": {
+        "uri": {
+            "$ref": "uri.schema.json"
+        },
+        "location": {
+            "type": "integer"
+        },
+        "binding": {
+            "type": "integer"
+        },
+        "format": {
+            "$ref": "format.schema.json"
+        },
+        "offset": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "uri",
+        "location",
+        "binding",
+        "format",
+        "offset"
+    ]
+}

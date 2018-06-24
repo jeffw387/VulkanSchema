@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/shaderStageConfig.schema.json",
+    "type": "object",
+    "properties": {
+        "uri": {
+            "$ref": "uri.schema.json"
+        },
+        "shaderStage": {
+            "$ref": "shaderStage.schema.json"
+        },
+        "module": {
+            "type": "string",
+            "description": "Current intent would be the file name/path to the SPV."
+        },
+        "name": {
+            "type": "string",
+            "description": "Entry point for the shader"
+        },
+        "specializationMapEntries": {
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "specializationMapEntry.schema.json"
+                    },
+                    {
+                        "$ref": "uri.schema.json"
+                    }
+                ]
+            }
+        }
+    },
+    "required": [
+        "uri",
+        "shaderStage",
+        "module",
+        "name"
+    ]
+}

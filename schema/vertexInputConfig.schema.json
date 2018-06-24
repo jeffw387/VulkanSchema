@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/vertexInputConfig.schema.json",
+    "type": "object",
+    "properties": {
+        "uri": {
+            "$ref": "uri.schema.json"
+        },
+        "vertexBindingDescriptions": {
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "vertexBindingDescription.schema.json"
+                    },
+                    {
+                        "$ref": "uri.schema.json"
+                    }
+                ]
+            }
+        },
+        "vertexAttributeDescriptions": {
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "vertexAttributeDescription.schema.json"
+                    },
+                    {
+                        "$ref": "uri.schema.json"
+                    }
+                ]
+            }
+        }
+    },
+    "required": [
+        "uri",
+        "vertexBindingDescriptions",
+        "vertexAttributeDescriptions"
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/vertexBindingDescription.schema.json",
+    "type": "object",
+    "properties": {
+        "uri": {
+            "$ref": "uri.schema.json"
+        },
+        "binding": {
+            "type": "integer"
+        },
+        "stride": {
+            "type": "integer"
+        },
+        "inputRate": {
+            "type": "string",
+            "enum": [
+                "VK_VERTEX_INPUT_RATE_VERTEX",
+                "VK_VERTEX_INPUT_RATE_INSTANCE"
+            ]
+        }
+    },
+    "required": [
+        "uri",
+        "binding",
+        "stride",
+        "inputRate"
+    ]
+}

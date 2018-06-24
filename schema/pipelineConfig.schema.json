@@ -1,235 +1,49 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/pipelineConfig.schema.json",
-    "definitions": {
+    "type": "object",
+    "properties": {
         "uri": {
-            "type": "string",
-            "minLength": 1,
-            "description": "A unique identifier per json instance"
+            "$ref": "uri.schema.json"
         },
-        "format": {
-            "$ref": "format.schema.json"
-        },
-        "specializationMapEntry": {
-            "type": "object",
-            "properties": {
-                "uri": {
-                    "$ref": "#/definitions/uri"
-                },
-                "constantID": {
-                    "type": "integer"
-                },
-                "offset": {
-                    "type": "integer"
-                },
-                "size": {
-                    "type": "integer"
-                }
-            },
-            "required":[
-                "uri",
-                "constantID",
-                "offset",
-                "size"
-            ]
-        },
-        "shaderStageConfig": {
-            "type": "object",
-            "properties": {
-                "uri": {
-                    "$ref": "#/definitions/uri"
-                },
-                "shaderStage": {
-                    "$ref": "shaderStage.schema.json"
-                },
-                "module": {
-                    "type": "string",
-                    "description": "Current intent would be the file name/path to the SPV."
-                },
-                "name": {
-                    "type": "string",
-                    "description": "Entry point for the shader"
-                },
-                "specializationMapEntries": {
-                    "items": {
-                        "oneOf": [
-                            {
-                                "$ref": "#/definitions/specializationMapEntry"
-                            },
-                            {
-                                "$ref": "#/definitions/uri"
-                            }
-                        ]
+        "shaderStageConfigs": {
+            "type": "array",
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "shaderStageConfig.schema.json"
+                    },
+                    {
+                        "$ref": "uri.schema.json"
                     }
-                }
-            },
-            "required":[
-                "uri",
-                "shaderStage",
-                "module",
-                "name"
-            ]
-        },
-        "vertexBindingDescription": {
-            "type": "object",
-            "properties": {
-                "uri": {
-                    "$ref": "#/definitions/uri"
-                },
-                "binding": {
-                    "type": "integer"
-                },
-                "stride": {
-                    "type": "integer"
-                },
-                "inputRate": {
-                    "type": "string",
-                    "enum": [
-                        "VK_VERTEX_INPUT_RATE_VERTEX",
-                        "VK_VERTEX_INPUT_RATE_INSTANCE"
-                    ]
-                }
-            },
-            "required":[
-                "uri",
-                "binding",
-                "stride",
-                "inputRate"
-            ]
-        },
-        "vertexAttributeDescription": {
-            "type": "object",
-            "properties": {
-                "uri": {
-                    "$ref": "#/definitions/uri"
-                },
-                "location": {
-                    "type": "integer"
-                },
-                "binding": {
-                    "type": "integer"
-                },
-                "format": {
-                    "$ref": "#/definitions/format"
-                },
-                "offset": {
-                    "type": "integer"
-                }
-            },
-            "required": [
-                "uri",
-                "location",
-                "binding",
-                "format",
-                "offset"
-            ]
+                ]
+            }
         },
         "vertexInputConfig": {
-            "type": "object",
-            "properties": {
-                "uri": {
-                    "$ref": "#/definitions/uri"
+            "oneOf": [
+                {
+                    "$ref": "vertexInputConfig.schema.json"
                 },
-                "vertexBindingDescriptions": {
-                    "type": "array",
-                    "items": {
-                        "oneOf": [
-                            {
-                                "$ref": "#/definitions/vertexBindingDescription"
-                            },
-                            {
-                                "$ref": "#/definitions/uri"
-                            }
-                        ]
-                    }
-                },
-                "vertexAttributeDescriptions": {
-                    "type": "array",
-                    "items": {
-                        "oneOf": [
-                            {
-                                "$ref": "#/definitions/vertexAttributeDescription"
-                            },
-                            {
-                                "$ref": "#/definitions/uri"
-                            }
-                        ]
-                    }
+                {
+                    "$ref": "uri.schema.json"
                 }
-            },
-            "required":[
-                "uri",
-                "vertexBindingDescriptions",
-                "vertexAttributeDescriptions"
             ]
         },
         "inputAssemblyConfig": {
-            "type": "object",
-            "properties": {
-                "uri": {
-                    "$ref": "#/definitions/uri"
+            "oneOf": [
+                {
+                    "$ref": "inputAssemblyConfig.schema.json"
                 },
-                "primitiveTopology": {
-                    "$ref": "primitiveTopology.schema.json"
-                },
-                "primitiveRestartEnable": {
-                    "type": "boolean",
-                    "default": false
+                {
+                    "$ref": "uri.schema.json"
                 }
-            },
-            "required":[
-                "uri",
-                "primitiveTopology",
-                "primitiveRestartEnable"
-            ]
-        },
-        "pipelineConfig": {
-            "type": "object",
-            "properties": {
-                "uri": {
-                    "$ref": "#/definitions/uri"
-                },
-                "shaderStageConfigs": {
-                    "type": "array",
-                    "items": {
-                        "oneOf": [
-                            {
-                                "$ref": "#/definitions/shaderStageConfig"
-                            },
-                            {
-                                "$ref": "#/definitions/uri"
-                            }
-                        ]
-                    }
-                },
-                "vertexInputConfig": {
-                    "oneOf": [
-                        {
-                            "$ref": "#/definitions/vertexInputConfig"
-                        },
-                        {
-                            "$ref": "#/definitions/uri"
-                        }
-                    ]
-                },
-                "inputAssemblyConfig": {
-                    "oneOf": [
-                        {
-                            "$ref": "#/definitions/inputAssemblyConfig"
-                        },
-                        {
-                            "$ref": "#/definitions/uri"
-                        }
-                    ]
-                }
-            },
-            "required": [
-                "uri",
-                "shaderStageConfigs",
-                "vertexInputConfig",
-                "inputAssemblyConfig"
             ]
         }
     },
-    "$ref": "#/definitions/pipelineConfig"
+    "required": [
+        "uri",
+        "shaderStageConfigs",
+        "vertexInputConfig",
+        "inputAssemblyConfig"
+    ]
 }

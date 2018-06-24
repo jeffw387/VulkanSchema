@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/inputAssemblyConfig.schema.json",
+    "type": "object",
+    "properties": {
+        "uri": {
+            "$ref": "uri.schema.json"
+        },
+        "primitiveTopology": {
+            "$ref": "primitiveTopology.schema.json"
+        },
+        "primitiveRestartEnable": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "required": [
+        "uri",
+        "primitiveTopology",
+        "primitiveRestartEnable"
+    ]
+}
