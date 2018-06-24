@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/shaderStage.schema.json",
+    "type": "string",
+    "enum": [
+        "VK_SHADER_STAGE_VERTEX_BIT",
+        "VK_SHADER_STAGE_TESSELLATION_CONTROL_BIT",
+        "VK_SHADER_STAGE_TESSELLATION_EVALUATION_BIT",
+        "VK_SHADER_STAGE_GEOMETRY_BIT",
+        "VK_SHADER_STAGE_FRAGMENT_BIT",
+        "VK_SHADER_STAGE_COMPUTE_BIT",
+        "VK_SHADER_STAGE_ALL_GRAPHICS",
+        "VK_SHADER_STAGE_ALL"
+    ]
+}

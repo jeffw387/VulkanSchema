@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/primitiveTopology.schema.json",
+    "type": "string",
+    "enum": [
+        "VK_PRIMITIVE_TOPOLOGY_POINT_LIST",
+        "VK_PRIMITIVE_TOPOLOGY_LINE_LIST",
+        "VK_PRIMITIVE_TOPOLOGY_LINE_STRIP",
+        "VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST",
+        "VK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP",
+        "VK_PRIMITIVE_TOPOLOGY_TRIANGLE_FAN",
+        "VK_PRIMITIVE_TOPOLOGY_LINE_LIST_WITH_ADJACENCY",
+        "VK_PRIMITIVE_TOPOLOGY_LINE_STRIP_WITH_ADJACENCY",
+        "VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST_WITH_ADJACENCY",
+        "VK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP_WITH_ADJACENCY",
+        "VK_PRIMITIVE_TOPOLOGY_PATCH_LIST"
+    ]
+}
