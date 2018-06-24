@@ -48,6 +48,16 @@
                     "$ref": "uri.schema.json"
                 }
             ]
+        },
+        "viewportConfig": {
+            "oneOf":[
+                {
+                    "$ref": "viewportConfig.schema.json"
+                },
+                {
+                    "$ref": "uri.schema.json"
+                }
+            ]
         }
     },
     "required": [
@@ -55,6 +65,7 @@
         "shaderStageConfigs",
         "vertexInputConfig",
         "inputAssemblyConfig",
-        "tesselationConfig"
+        "tesselationConfig",
+        "viewportConfig"
     ]
 }
