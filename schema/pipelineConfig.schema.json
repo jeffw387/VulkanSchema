@@ -38,6 +38,16 @@
                     "$ref": "uri.schema.json"
                 }
             ]
+        },
+        "tesselationConfig": {
+            "oneOf": [
+                {
+                    "$ref": "tesselationConfig.schema.json"
+                },
+                {
+                    "$ref": "uri.schema.json"
+                }
+            ]
         }
     },
     "required": [
