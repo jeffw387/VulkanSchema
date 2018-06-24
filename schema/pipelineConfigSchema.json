@@ -410,6 +410,34 @@
             }
         }
     },
+    "inputAssemblyConfig": {
+        "type": "object",
+        "properties": {
+            "uri": {
+                "$ref": "#/definitions/uri"
+            },
+            "primitiveTopology": {
+                "type": "string",
+                "enum": [
+                    "VK_PRIMITIVE_TOPOLOGY_POINT_LIST",
+                    "VK_PRIMITIVE_TOPOLOGY_LINE_LIST",
+                    "VK_PRIMITIVE_TOPOLOGY_LINE_STRIP",
+                    "VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST",
+                    "VK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP",
+                    "VK_PRIMITIVE_TOPOLOGY_TRIANGLE_FAN",
+                    "VK_PRIMITIVE_TOPOLOGY_LINE_LIST_WITH_ADJACENCY",
+                    "VK_PRIMITIVE_TOPOLOGY_LINE_STRIP_WITH_ADJACENCY",
+                    "VK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST_WITH_ADJACENCY",
+                    "VK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP_WITH_ADJACENCY",
+                    "VK_PRIMITIVE_TOPOLOGY_PATCH_LIST"
+                ]
+            },
+            "primitiveRestartEnable": {
+                "type": "bool",
+                "default": false
+            }
+        }
+    },
     "pipelineConfig": {
         "type": "object",
         "properties": {
@@ -433,6 +461,16 @@
                 "oneOf": [
                     {
                         "$ref": "#/definitions/vertexInputConfig"
+                    },
+                    {
+                        "$ref": "#/definitions/uri"
+                    }
+                ]
+            },
+            "inputAssemblyConfig": {
+                "oneOf": [
+                    {
+                        "$ref": "#/definitions/inputAssemblyConfig"
                     },
                     {
                         "$ref": "#/definitions/uri"
