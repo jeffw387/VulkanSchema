@@ -1,4 +1,69 @@
-{ 
+{
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/pipelineConfigSchema.json"
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/pipelineConfigSchema.json",
+    "definitions": {
+        "uri": {
+            "type": "string",
+            "minLength": 1
+        },
+        "shaderStage": {
+            "type": "string",
+            "enum": [
+                "VK_SHADER_STAGE_VERTEX_BIT",
+                "VK_SHADER_STAGE_TESSELLATION_CONTROL_BIT",
+                "VK_SHADER_STAGE_TESSELLATION_EVALUATION_BIT",
+                "VK_SHADER_STAGE_GEOMETRY_BIT",
+                "VK_SHADER_STAGE_FRAGMENT_BIT",
+                "VK_SHADER_STAGE_COMPUTE_BIT",
+                "VK_SHADER_STAGE_ALL_GRAPHICS",
+                "VK_SHADER_STAGE_ALL"
+            ]
+        },
+        "specializationMapEntryConfig": {
+            "type": "object",
+            "properties": {
+                "uri": {
+                    "$ref": "#/definitions/uri"
+                },
+                "constantID": {
+                    "type": "number"
+                },
+                "offset": {
+                    "type": "number"
+                },
+                "size": {
+                    "type": "number"
+                }
+            }
+        },
+        "shaderStageConfig": {
+            "type": "object",
+            "properties": {
+                "uri": {
+                    "$ref": "#/definitions/uri"
+                },
+                "shaderStage": {
+                    "$ref": "#/definitions/shaderStage"
+                },
+                "module": {
+                    "type": "string",
+                    "description": "Current intent would be the file name/path to the SPV."
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Entry point for the shader"
+                },
+                "specializationMapEntries": {
+                    "items": { "$ref" : "#/definitions"}
+                }
+            }
+        },
+        "shaderStageConfigs": {
+            "items": {
+                "$ref": "#/definitions/shaderStageConfig"
+            }
+        },
+        "pipelineConfig":
+        {}
+    }
 }
