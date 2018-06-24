@@ -293,13 +293,13 @@
                     "$ref": "#/definitions/uri"
                 },
                 "constantID": {
-                    "type": "number"
+                    "type": "integer"
                 },
                 "offset": {
-                    "type": "number"
+                    "type": "integer"
                 },
                 "size": {
-                    "type": "number"
+                    "type": "integer"
                 }
             }
         },
@@ -322,7 +322,14 @@
                 },
                 "specializationMapEntries": {
                     "items": {
-                        "$ref": "#/definitions/specializationMapEntry"
+                        "oneOf": [
+                            {
+                                "$ref": "#/definitions/specializationMapEntry"
+                            },
+                            {
+                                "$ref": "#/definitions/uri"
+                            }
+                        ]
                     }
                 }
             }
@@ -334,10 +341,10 @@
                     "$ref": "#/definitions/uri"
                 },
                 "binding": {
-                    "type": "number"
+                    "type": "integer"
                 },
                 "stride": {
-                    "type": "number"
+                    "type": "integer"
                 },
                 "inputRate": {
                     "type": "string",
@@ -355,16 +362,16 @@
                     "$ref": "#/definitions/uri"
                 },
                 "location": {
-                    "type": "number"
+                    "type": "integer"
                 },
                 "binding": {
-                    "type": "number"
+                    "type": "integer"
                 },
                 "format": {
                     "$ref": "#/definitions/format"
                 },
                 "offset": {
-                    "type":"number"
+                    "type": "integer"
                 }
             }
         },
@@ -377,14 +384,28 @@
                 "vertexBindingDescriptions": {
                     "type": "array",
                     "items": {
-                        "$ref": "#/definitions/vertexBindingDescription"
+                        "oneOf": [
+                            {
+                                "$ref": "#/definitions/vertexBindingDescription"
+                            },
+                            {
+                                "$ref": "#/definitions/uri"
+                            }
+                        ]
                     }
                 }
             },
             "vertexAttributeDescriptions": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/vertexAttributeDescription"
+                    "oneOf": [
+                        {
+                            "$ref": "#/definitions/vertexAttributeDescription"
+                        },
+                        {
+                            "$ref": "#/definitions/uri"
+                        }
+                    ]
                 }
             }
         }
@@ -398,11 +419,25 @@
             "shaderStageConfigs": {
                 "type": "array",
                 "items": {
-                    "$ref": "#/definitions/shaderStageConfig"
+                    "oneOf": [
+                        {
+                            "$ref": "#/definitions/shaderStageConfig"
+                        },
+                        {
+                            "$ref": "#/definitions/uri"
+                        }
+                    ]
                 }
             },
             "vertexInputConfig": {
-                "$ref": "#/definitions/vertexInputConfig"
+                "oneOf": [
+                    {
+                        "$ref": "#/definitions/vertexInputConfig"
+                    },
+                    {
+                        "$ref": "#/definitions/uri"
+                    }
+                ]
             }
         }
     }
