@@ -4,17 +4,17 @@
     "type": "object",
     "properties": {
         "uri": {
-            "$ref": "uri.schema.json"
+            "$ref": "/uri.schema.json"
         },
         "vertexBindingDescriptions": {
             "type": "array",
             "items": {
                 "oneOf": [
                     {
-                        "$ref": "vertexBindingDescription.schema.json"
+                        "$ref": "/vertexBindingDescription.schema.json"
                     },
                     {
-                        "$ref": "uri.schema.json"
+                        "$ref": "/uri.schema.json"
                     }
                 ]
             }
@@ -24,10 +24,10 @@
             "items": {
                 "oneOf": [
                     {
-                        "$ref": "vertexAttributeDescription.schema.json"
+                        "$ref": "/vertexAttributeDescription.schema.json"
                     },
                     {
-                        "$ref": "uri.schema.json"
+                        "$ref": "/uri.schema.json"
                     }
                 ]
             }

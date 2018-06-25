@@ -4,7 +4,7 @@
     "type": "object",
     "properties": {
         "uri": {
-            "$ref": "uri.schema.json"
+            "$ref": "/uri.schema.json"
         },
         "binding": {
             "type": "integer"

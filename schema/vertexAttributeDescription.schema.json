@@ -4,7 +4,7 @@
     "type": "object",
     "properties": {
         "uri": {
-            "$ref": "uri.schema.json"
+            "$ref": "/uri.schema.json"
         },
         "location": {
             "type": "integer"
@@ -13,7 +13,7 @@
             "type": "integer"
         },
         "format": {
-            "$ref": "format.schema.json"
+            "$ref": "/format.schema.json"
         },
         "offset": {
             "type": "integer"

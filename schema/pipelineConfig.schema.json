@@ -4,17 +4,17 @@
     "type": "object",
     "properties": {
         "uri": {
-            "$ref": "uri.schema.json"
+            "$ref": "/uri.schema.json"
         },
         "shaderStageConfigs": {
             "type": "array",
             "items": {
                 "oneOf": [
                     {
-                        "$ref": "shaderStageConfig.schema.json"
+                        "$ref": "/shaderStageConfig.schema.json"
                     },
                     {
-                        "$ref": "uri.schema.json"
+                        "$ref": "/uri.schema.json"
                     }
                 ]
             }
@@ -22,70 +22,70 @@
         "vertexInputConfig": {
             "oneOf": [
                 {
-                    "$ref": "vertexInputConfig.schema.json"
+                    "$ref": "/vertexInputConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "/uri.schema.json"
                 }
             ]
         },
         "inputAssemblyConfig": {
             "oneOf": [
                 {
-                    "$ref": "inputAssemblyConfig.schema.json"
+                    "$ref": "/inputAssemblyConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "/uri.schema.json"
                 }
             ]
         },
         "tesselationConfig": {
             "oneOf": [
                 {
-                    "$ref": "tesselationConfig.schema.json"
+                    "$ref": "/tesselationConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "/uri.schema.json"
                 }
             ]
         },
         "viewportConfig": {
             "oneOf": [
                 {
-                    "$ref": "viewportConfig.schema.json"
+                    "$ref": "/viewportConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "/uri.schema.json"
                 }
             ]
         },
         "rasterizationConfig": {
             "oneOf": [
                 {
-                    "$ref": "rasterizationConfig.schema.json"
+                    "$ref": "/rasterizationConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "/uri.schema.json"
                 }
             ]
         },
         "multisamplingConfig": {
             "oneOf": [
                 {
-                    "$ref": "multisamplingConfig.schema.json"
+                    "$ref": "/multisamplingConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "/uri.schema.json"
                 }
             ]
         },
         "depthStencilConfig": {
             "oneOf": [
                 {
-                    "$ref": "depthStencilConfig.schema.json"
+                    "$ref": "/depthStencilConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "/uri.schema.json"
                 }
             ]
         }
