@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://rawgit.com/jeffw387/VulkanSchema/blob/master/schema/tesselationConfig.schema.json",
+    "id": "https://rawgit.com/jeffw387/VulkanSchema/master/schema/tesselationConfig.schema.json",
     "type": "object",
     "properties": {
         "patchControlPoints": {

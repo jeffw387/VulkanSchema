@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://rawgit.com/jeffw387/VulkanSchema/blob/master/schema/offset2D.schema.json",
+    "id": "https://rawgit.com/jeffw387/VulkanSchema/master/schema/offset2D.schema.json",
     "type": "object",
     "properties": {
         "x": {
