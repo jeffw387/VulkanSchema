@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/rasterizationConfig.schema.json",
+    "type": "object",
+    "properties": {
+        "uri": {
+            "$ref": "uri.schema.json"
+        },
+        "depthClampEnable": {
+            "type": "boolean"
+        },
+        "rasterizerDiscardEnable": {
+            "type": "boolean"
+        },
+        "polygonMode": {
+            "type": "string",
+            "enum": [
+                "VK_POLYGON_MODE_FILL",
+                "VK_POLYGON_MODE_LINE",
+                "VK_POLYGON_MODE_POINT",
+                "VK_POLYGON_MODE_FILL_RECTANGLE_NV"
+            ]
+        },
+        "cullMode": {
+            "type": "string",
+            "enum": [
+                "VK_CULL_MODE_NONE",
+                "VK_CULL_MODE_FRONT_BIT",
+                "VK_CULL_MODE_BACK_BIT",
+                "VK_CULL_MODE_FRONT_AND_BACK"
+            ]
+        },
+        "frontFace": {
+            "type":"string",
+            "enum": [
+                "VK_FRONT_FACE_COUNTER_CLOCKWISE",
+                "VK_FRONT_FACE_CLOCKWISE"
+            ]
+        },
+        "depthBiasEnable": {
+            "type":"boolean"
+        },
+        "depthBiasConstantFactor": {
+            "type":"number"
+        },
+        "depthBiasClamp": {
+            "type":"number"
+        },
+        "depthBiasSlopeFactor": {
+            "type":"number"
+        },
+        "lineWidth": {
+            "type":"number"
+        }
+    },
+    "required":[
+        "uri",
+        "depthClampEnable",
+        "rasterizerDiscardEnable",
+        "polygonMode",
+        "cullMode",
+        "frontFace",
+        "depthBiasEnable",
+        "depthBiasConstantFactor",
+        "depthBiasClamp",
+        "depthBiasSlopeFactor",
+        "lineWidth"
+    ]
+}
