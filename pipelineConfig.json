@@ -5,12 +5,12 @@
     "inputAssemblyConfig": "",
     "tesselationConfig": "",
     "viewportConfig": "",
-    "Rasterization": "",
-    "Multisampling": "",
-    "DepthStencil": "",
-    "ColorBlending": "",
-    "DynamicStates": [],
-    "PipelineLayout": "",
-    "RenderPass": "",
-    "Subpass": 0
+    "rasterizationConfig": "",
+    "multisamplingConfig": "",
+    "depthStencilConfig": "",
+    "colorBlendConfig": "",
+    "dynamicStateConfig": [],
+    "pipelineLayoutConfig": "",
+    "renderPassConfig": "",
+    "subpass": 0
 }
