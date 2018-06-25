@@ -4,10 +4,10 @@
     "type": "object",
     "properties": {
         "uri": {
-            "$ref": "/uri.schema.json"
+            "$ref": "uri.schema.json"
         },
         "shaderStage": {
-            "$ref": "/shaderStage.schema.json"
+            "$ref": "shaderStage.schema.json"
         },
         "module": {
             "type": "string",
@@ -21,10 +21,10 @@
             "items": {
                 "oneOf": [
                     {
-                        "$ref": "/specializationMapEntry.schema.json"
+                        "$ref": "specializationMapEntry.schema.json"
                     },
                     {
-                        "$ref": "/uri.schema.json"
+                        "$ref": "uri.schema.json"
                     }
                 ]
             }

@@ -4,10 +4,10 @@
     "type": "object",
     "properties": {
         "offset": {
-            "$ref": "/offset2D.schema.json"
+            "$ref": "offset2D.schema.json"
         },
         "extent": {
-            "$ref": "/extent2D.schema.json"
+            "$ref": "extent2D.schema.json"
         }
     }
 }

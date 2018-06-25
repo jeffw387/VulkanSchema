@@ -4,10 +4,10 @@
     "type": "object",
     "properties": {
         "uri": {
-            "$ref": "/uri.schema.json"
+            "$ref": "uri.schema.json"
         },
         "primitiveTopology": {
-            "$ref": "/primitiveTopology.schema.json"
+            "$ref": "primitiveTopology.schema.json"
         },
         "primitiveRestartEnable": {
             "type": "boolean",

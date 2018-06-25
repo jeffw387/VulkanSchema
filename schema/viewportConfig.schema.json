@@ -4,18 +4,18 @@
     "type": "object",
     "properties": {
         "uri": {
-            "$ref": "/uri.schema.json"
+            "$ref": "uri.schema.json"
         },
         "viewports": {
             "type":"array",
             "items": {
-                "$ref": "/viewport.schema.json"
+                "$ref": "viewport.schema.json"
             }
         },
         "scissors": {
             "type": "array",
             "items": {
-                "$ref": "/rect2D.schema.json"
+                "$ref": "rect2D.schema.json"
             }
         }
     },
