@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://gitcdn.link/jeffw387/VulkanSchema/blob/master/schema/sampleCount.schema.json",
+    "id": "https://rawgit.com/jeffw387/VulkanSchema/blob/master/schema/sampleCount.schema.json",
     "type": "string",
     "enum": [
         "VK_SAMPLE_COUNT_1_BIT",

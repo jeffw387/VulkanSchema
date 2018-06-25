@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://gitcdn.link/jeffw387/VulkanSchema/blob/master/schema/uri.schema.json",
+    "id": "https://rawgit.com/jeffw387/VulkanSchema/blob/master/schema/uri.schema.json",
     "type": "string",
     "minLength": 1,
     "description": "A unique identifier per json instance"

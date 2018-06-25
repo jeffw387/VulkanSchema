@@ -1,5 +1,5 @@
 {
-    "$schema": "https://gitcdn.link/jeffw387/VulkanSchema/blob/master/schema/rasterizationConfig.schema.json",
+    "$schema": "https://rawgit.com/jeffw387/VulkanSchema/blob/master/schema/rasterizationConfig.schema.json",
     "uri": "",
     "shaderStageConfigs": [],
     "vertexInputConfig": "",
