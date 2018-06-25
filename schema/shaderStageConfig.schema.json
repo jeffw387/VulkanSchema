@@ -2,6 +2,7 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "https://rawgit.com/jeffw387/VulkanSchema/master/schema/shaderStageConfig.schema.json",
     "type": "object",
+    "description": "Shader Stage Config",
     "properties": {
         "uri": {
             "$ref": "uri.schema.json"
