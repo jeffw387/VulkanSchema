@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/compareOp.schema.json",
+            "type": "string",
+            "enum": [
+                "VK_COMPARE_OP_NEVER",
+                "VK_COMPARE_OP_LESS",
+                "VK_COMPARE_OP_EQUAL",
+                "VK_COMPARE_OP_LESS_OR_EQUAL",
+                "VK_COMPARE_OP_GREATER",
+                "VK_COMPARE_OP_NOT_EQUAL",
+                "VK_COMPARE_OP_GREATER_OR_EQUAL",
+                "VK_COMPARE_OP_ALWAYS"
+            ]
+        }

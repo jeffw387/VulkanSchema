@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/depthStencilConfig.schema.json",
+    "type": "object",
+    "properties": {
+        "uri": {
+            "$ref": "uri.schema.json"
+        },
+        "depthTestEnable": {
+            "type": "boolean"
+        },
+        "depthWriteEnable": {
+            "type": "boolean"
+        },
+        "depthCompareOp": {
+            "$ref": "compareOp.schema.json"
+        },
+        "depthBoundsTestEnable": {
+            "type": "boolean"
+        },
+        "stencilTestEnable": {
+            "type": "boolean"
+        },
+        "front": {
+            "description": "Not Implemented"
+        },
+        "back": {
+            "description": "Not Implemented"
+        },
+        "minDepthBounds": {
+            "type": "number"
+        },
+        "maxDepthBounds": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "uri",
+        "depthTestEnable",
+        "depthWriteEnable",
+        "depthCompareOp",
+        "depthBoundsTestEnable",
+        "stencilTestEnable",
+        "front",
+        "back",
+        "minDepthBounds",
+        "maxDepthBounds"
+    ]
+}

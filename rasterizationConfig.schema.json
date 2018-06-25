@@ -31,29 +31,29 @@
             ]
         },
         "frontFace": {
-            "type":"string",
+            "type": "string",
             "enum": [
                 "VK_FRONT_FACE_COUNTER_CLOCKWISE",
                 "VK_FRONT_FACE_CLOCKWISE"
             ]
         },
         "depthBiasEnable": {
-            "type":"boolean"
+            "type": "boolean"
         },
         "depthBiasConstantFactor": {
-            "type":"number"
+            "type": "number"
         },
         "depthBiasClamp": {
-            "type":"number"
+            "type": "number"
         },
         "depthBiasSlopeFactor": {
-            "type":"number"
+            "type": "number"
         },
         "lineWidth": {
-            "type":"number"
+            "type": "number"
         }
     },
-    "required":[
+    "required": [
         "uri",
         "depthClampEnable",
         "rasterizerDiscardEnable",

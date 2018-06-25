@@ -1,12 +1,12 @@
 {
     "uri": "",
-    "DepthTestEnable": false,
-    "DepthWriteEnable": false,
-    "DepthCompareOp": "",
-    "DepthBoundsTestEnable": false,
-    "StencilTestEnable": false,
-    "Front": "",
-    "Back": "",
-    "MinimumDepthBounds": 0.0,
-    "MaximumDepthBounds": 0.0
+    "depthTestEnable": false,
+    "depthWriteEnable": false,
+    "depthCompareOp": "",
+    "depthBoundsTestEnable": false,
+    "stencilTestEnable": false,
+    "front": "",
+    "back": "",
+    "minDepthBounds": 0.0,
+    "maxDepthBounds": 0.0
 }

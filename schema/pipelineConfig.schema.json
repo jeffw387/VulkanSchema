@@ -50,7 +50,7 @@
             ]
         },
         "viewportConfig": {
-            "oneOf":[
+            "oneOf": [
                 {
                     "$ref": "viewportConfig.schema.json"
                 },
@@ -68,6 +68,26 @@
                     "$ref": "uri.schema.json"
                 }
             ]
+        },
+        "multisamplingConfig": {
+            "oneOf": [
+                {
+                    "$ref": "multisamplingConfig.schema.json"
+                },
+                {
+                    "$ref": "uri.schema.json"
+                }
+            ]
+        },
+        "depthStencilConfig": {
+            "oneOf": [
+                {
+                    "$ref": "depthStencilConfig.schema.json"
+                },
+                {
+                    "$ref": "uri.schema.json"
+                }
+            ]
         }
     },
     "required": [
@@ -77,6 +97,7 @@
         "inputAssemblyConfig",
         "tesselationConfig",
         "viewportConfig",
-        "rasterizationConfig"
+        "rasterizationConfig",
+        "depthStencilConfig"
     ]
 }

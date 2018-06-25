@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/multisampleConfig.schema.json",
+    "type": "object",
+    "properties": {
+        "uri": {
+            "$ref": "uri.schema.json"
+        },
+        "rasterizationSamples": {
+            "$ref": "sampleCount.schema.json"
+        },
+        "sampleShadingEnable": {
+            "type": "boolean"
+        },
+        "minSampleShading": {
+            "type": "number"
+        },
+        "sampleMask": {
+            "description": "Not Implemented"
+        },
+        "alphaToCoverageEnable": {
+            "type": "boolean"
+        },
+        "alphaToOneEnable": {
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "uri",
+        "rasterizationSamples",
+        "sampleShadingEnable",
+        "minSampleShading",
+        "sampleMask",
+        "alphaToCoverageEnable",
+        "alphaToOneEnable"
+    ]
+}
