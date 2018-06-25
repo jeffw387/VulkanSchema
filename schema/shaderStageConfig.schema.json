@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://github.com/jeffw387/VulkanSchema/blob/master/schema/shaderStageConfig.schema.json",
+    "id": "https://gitcdn.link/jeffw387/VulkanSchema/blob/master/schema/shaderStageConfig.schema.json",
     "type": "object",
     "properties": {
         "uri": {
