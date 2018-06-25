@@ -1,7 +1,12 @@
 {
     "$schema": "https://rawgit.com/jeffw387/VulkanSchema/master/schema/rasterizationConfig.schema.json",
-    "uri": "1",
-    "shaderStageConfigs": [],
+    "uri": "0",
+    "shaderStageConfigs": [
+        {
+            "uri":"1",
+            "shaderStage": ""
+        }
+    ],
     "vertexInputConfig": "",
     "inputAssemblyConfig": "",
     "tesselationConfig": "",
