@@ -24,7 +24,7 @@
         "depthBiasSlopeFactor": 0,
         "lineWidth": 1
     },
-    "multisamplingConfig": "",
+    "multisampleConfig": "",
     "depthStencilConfig": {
         "uri": "3",
         "depthTestEnable": true,
