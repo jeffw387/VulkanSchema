@@ -4,13 +4,14 @@
     "shaderStageConfigs": [
         {
             "uri":"1",
-            "shaderStage": ""
+            "shaderStage": "VK_SHADER_STAGE_VERTEX_BIT",
+            "module": "Shaders/vert.spv",
+            "name": "main"
         }
     ],
-    "vertexInputConfig": "",
-    "inputAssemblyConfig": "",
-    "tesselationConfig": "",
-    "viewportConfig": "",
+    "vertexInputConfig": "vertexInputConfig.json",
+    "inputAssemblyConfig": "inputAssemblyConfig.json",
+    "viewportConfig": "viewportConfig.json",
     "rasterizationConfig": {
         "uri": "2",
         "depthClampEnable": false,
@@ -24,7 +25,6 @@
         "depthBiasSlopeFactor": 0,
         "lineWidth": 1
     },
-    "multisampleConfig": "",
     "depthStencilConfig": {
         "uri": "3",
         "depthTestEnable": true,
