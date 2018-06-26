@@ -42,7 +42,7 @@
         "VK_DYNAMIC_STATE_VIEWPORT",
         "VK_DYNAMIC_STATE_SCISSOR"
     ],
-    "pipelineLayoutConfig": "",
-    "renderPassConfig": "",
+    "pipelineLayoutConfig": "pipelineLayoutConfig.json",
+    "renderPassConfig": "renderPassConfig.json",
     "subpass": 0
 }
