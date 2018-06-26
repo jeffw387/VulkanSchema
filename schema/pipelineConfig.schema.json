@@ -2,6 +2,25 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/pipelineConfig.schema.json",
     "type": "object",
+    "definitions": {
+        "dynamicState": {
+            "type": "string",
+            "enum": [
+                "VK_DYNAMIC_STATE_VIEWPORT",
+                "VK_DYNAMIC_STATE_SCISSOR",
+                "VK_DYNAMIC_STATE_LINE_WIDTH",
+                "VK_DYNAMIC_STATE_DEPTH_BIAS",
+                "VK_DYNAMIC_STATE_BLEND_CONSTANTS",
+                "VK_DYNAMIC_STATE_DEPTH_BOUNDS",
+                "VK_DYNAMIC_STATE_STENCIL_COMPARE_MASK",
+                "VK_DYNAMIC_STATE_STENCIL_WRITE_MASK",
+                "VK_DYNAMIC_STATE_STENCIL_REFERENCE",
+                "VK_DYNAMIC_STATE_VIEWPORT_W_SCALING_NV",
+                "VK_DYNAMIC_STATE_DISCARD_RECTANGLE_EXT",
+                "VK_DYNAMIC_STATE_SAMPLE_LOCATIONS_EXT"
+            ]
+        }
+    },
     "properties": {
         "uri": {
             "$ref": "uri.schema.json"
@@ -90,9 +109,25 @@
             ]
         },
         "colorBlendConfig": {
-            "oneOf":[
+            "oneOf": [
                 {
                     "$ref": "colorBlendConfig.schema.json"
+                },
+                {
+                    "$ref": "uri.schema.json"
+                }
+            ]
+        },
+        "dynamicStates": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/dynamicState"
+            }
+        },
+        "pipelineLayoutConfig": {
+            "oneOf": [
+                {
+                    "$ref": "pipelineLayoutConfig.schema.json"
                 },
                 {
                     "$ref": "uri.schema.json"
@@ -107,6 +142,9 @@
         "inputAssemblyConfig",
         "viewportConfig",
         "rasterizationConfig",
-        "depthStencilConfig"
+        "depthStencilConfig",
+        "colorBlendConfig",
+        "dynamicStates",
+        "pipelineLayoutConfig"
     ]
 }

@@ -3,7 +3,7 @@
     "uri": "0",
     "shaderStageConfigs": [
         {
-            "uri":"1",
+            "uri": "1",
             "shaderStage": "VK_SHADER_STAGE_VERTEX_BIT",
             "module": "Shaders/vert.spv",
             "name": "main"
@@ -37,8 +37,11 @@
         "minDepthBounds": 0,
         "maxDepthBounds": 1
     },
-    "colorBlendConfig": "",
-    "dynamicStateConfig": [],
+    "colorBlendConfig": "colorBlendConfig.json",
+    "dynamicStates": [
+        "VK_DYNAMIC_STATE_VIEWPORT",
+        "VK_DYNAMIC_STATE_SCISSOR"
+    ],
     "pipelineLayoutConfig": "",
     "renderPassConfig": "",
     "subpass": 0

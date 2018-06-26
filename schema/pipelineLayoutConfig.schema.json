@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/pipelineLayoutConfig.schema.json",
+    "type": "object",
+    "properties": {
+        "uri": {
+            "$ref": "uri.schema.json"
+        },
+        "descriptorSetLayouts": {
+            "type":"array",
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "descriptorSetLayout.schema.json"
+                    },
+                    {
+                        "$ref": "uri.schema.json"
+                    }
+                ]
+            }
+        },
+        "pushConstantRanges": {
+            "type":"array",
+            "items": {
+                "oneOf": [
+                    {
+                        "$ref": "pushConstantRange.schema.json"
+                    },
+                    {
+                        "$ref": "uri.schema.json"
+                    }
+                ]
+            }
+        }
+    }
+}
