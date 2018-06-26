@@ -3,7 +3,7 @@
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/descriptorSetLayout.schema.json",
     "type": "object",
     "definitions": {
-        "descriptorSetLayoutFlags": {
+        "descriptorSetLayoutFlag": {
             "type": "string",
             "enum": [
                 "VK_DESCRIPTOR_SET_LAYOUT_CREATE_PUSH_DESCRIPTOR_BIT_KHR"
@@ -20,7 +20,7 @@
                     "minimum": 0
                 },
                 "descriptorType": {
-                    "type":"string",
+                    "type": "string",
                     "enum": [
                         "VK_DESCRIPTOR_TYPE_SAMPLER",
                         "VK_DESCRIPTOR_TYPE_COMBINED_IMAGE_SAMPLER",
@@ -59,10 +59,16 @@
             "$ref": "uri.schema.json"
         },
         "flags": {
-            "$ref": "#/definitions/descriptorSetLayoutFlags"
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/descriptorSetLayoutFlag"
+            }
         },
         "bindings": {
-            "$ref": "#definitions/descriptorSetLayoutBinding"
+            "type": "array",
+            "items": {
+                "$ref": "#definitions/descriptorSetLayoutBinding"
+            }
         }
     }
 }
