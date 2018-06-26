@@ -6,6 +6,10 @@
         "uri": {
             "$ref": "uri.schema.json"
         },
+        "viewportScissorCount": {
+            "type": "integer",
+            "minimum": 0
+        },
         "viewports": {
             "type":"array",
             "items": {
