@@ -32,5 +32,10 @@
                 ]
             }
         }
-    }
+    },
+    "required": [
+        "uri",
+        "descriptorSetLayouts",
+        "pushConstantRanges"
+    ]
 }
