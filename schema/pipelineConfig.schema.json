@@ -69,10 +69,10 @@
                 }
             ]
         },
-        "multisamplingConfig": {
+        "multisampleConfig": {
             "oneOf": [
                 {
-                    "$ref": "multisamplingConfig.schema.json"
+                    "$ref": "multisampleConfig.schema.json"
                 },
                 {
                     "$ref": "uri.schema.json"
