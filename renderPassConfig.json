@@ -1,6 +1,7 @@
 {
+    "$schema": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/renderPassConfig.schema.json",
     "uri": "",
-    "Attachments": [],
-    "Subpasses": [],
-    "Dependencies": []
+    "attachments": [],
+    "subpasses": [],
+    "dependencies": []
 }

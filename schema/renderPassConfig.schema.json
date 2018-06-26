@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/renderPassConfig.schema.json",
+    "type": "object",
+    "properties": {
+        "uri": {
+            "$ref": "uri.schema.json"
+        },
+        "attachments": {
+            "type": "array",
+            "items": {
+                "oneOf":[
+                    {
+                        "$ref": "attachmentDescription.schema.json"
+                    },
+                    {
+                        "$ref": "uri.schema.json"
+                    }
+                ]
+            }
+        },
+        "subpasses": {
+            "type": "array",
+            "items": {
+                "oneOf":[
+                    {
+                        "$ref": "subpassDescription.schema.json"
+                    },
+                    {
+                        "$ref": "uri.schema.json"
+                    }
+                ]
+            }
+        },
+        "dependencies": {
+            "type": "array",
+            "items": {
+                "oneOf":[
+                    {
+                        "$ref": "subpassDependency.schema.json"
+                    },
+                    {
+                        "$ref": "uri.schema.json"
+                    }
+                ]
+            }
+        }
+    },
+    "required":[
+        "uri",
+        "attachments",
+        "subpasses",
+        "dependencies"
+    ]
+}
