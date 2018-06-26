@@ -72,7 +72,7 @@
             "type": "boolean"
         },
         "compareOp": {
-            "$ref": "#/definitions/filter"
+            "$ref": "compareOp.schema.json"
         },
         "minLod": {
             "type": "number"
