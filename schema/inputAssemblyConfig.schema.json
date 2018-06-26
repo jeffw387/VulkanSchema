@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://rawgit.com/jeffw387/VulkanSchema/master/schema/inputAssemblyConfig.schema.json",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/inputAssemblyConfig.schema.json",
     "type": "object",
     "properties": {
         "uri": {
