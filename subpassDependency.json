@@ -1,0 +1,10 @@
+{
+    "uri": "",
+    "srcSubpass": 0,
+    "dstSubpass": 0,
+    "srcStageMask": [],
+    "dstStageMask": [],
+    "srcAccessMask": [],
+    "dstAccessMask": [],
+    "dependencyFlags": []
+}

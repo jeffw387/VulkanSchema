@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/accessFlag.schema.json",
+    "type": "string",
+    "enum": [
+        "VK_ACCESS_INDIRECT_COMMAND_READ_BIT",
+        "VK_ACCESS_INDEX_READ_BIT",
+        "VK_ACCESS_VERTEX_ATTRIBUTE_READ_BIT",
+        "VK_ACCESS_UNIFORM_READ_BIT",
+        "VK_ACCESS_INPUT_ATTACHMENT_READ_BIT",
+        "VK_ACCESS_SHADER_READ_BIT",
+        "VK_ACCESS_SHADER_WRITE_BIT",
+        "VK_ACCESS_COLOR_ATTACHMENT_READ_BIT",
+        "VK_ACCESS_COLOR_ATTACHMENT_WRITE_BIT",
+        "VK_ACCESS_DEPTH_STENCIL_ATTACHMENT_READ_BIT",
+        "VK_ACCESS_DEPTH_STENCIL_ATTACHMENT_WRITE_BIT",
+        "VK_ACCESS_TRANSFER_READ_BIT",
+        "VK_ACCESS_TRANSFER_WRITE_BIT",
+        "VK_ACCESS_HOST_READ_BIT",
+        "VK_ACCESS_HOST_WRITE_BIT",
+        "VK_ACCESS_MEMORY_READ_BIT",
+        "VK_ACCESS_MEMORY_WRITE_BIT",
+        "VK_ACCESS_COMMAND_PROCESS_READ_BIT_NVX",
+        "VK_ACCESS_COMMAND_PROCESS_WRITE_BIT_NVX",
+        "VK_ACCESS_COLOR_ATTACHMENT_READ_NONCOHERENT_BIT_EXT"
+    ]
+}

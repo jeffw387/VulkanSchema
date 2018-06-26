@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/subpassDescription.schema.json",
+    "type": "object",
+    "definitions": {
+        "attachmentReference": {
+            "type": "object",
+            "properties": {
+                "uri": {
+                    "$ref": "uri.schema.json"
+                },
+                "attachment": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "layout": {
+                    "$ref": "imageLayout.schema.json"
+                }
+            },
+            "required": [
+                "uri",
+                "attachment",
+                "layout"
+            ]
+        }
+    },
+    "properties": {
+        "uri": {
+            "$ref": "uri.schema.json"
+        },
+        "pipelineBindPoint": {
+            "$ref": "pipelineBindPoint.schema.json"
+        },
+        "inputAttachments": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/attachmentReference"
+            }
+        },
+        "colorAttachments": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/attachmentReference"
+            }
+        },
+        "resolveAttachments": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/attachmentReference"
+            }
+        },
+        "depthStencilAttachment": {
+            "$ref": "#/definitions/attachmentReference"
+        },
+        "preserveAttachments": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/attachmentReference"
+            }
+        }
+    },
+    "required": [
+        "uri",
+        "pipelineBindPoint",
+        "inputAttachments",
+        "colorAttachments",
+        "resolveAttachments",
+        "depthStencilAttachment",
+        "preserveAttachments"
+    ]
+}

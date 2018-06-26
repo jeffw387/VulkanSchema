@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/attachmentDescription.schema.json",
+    "type": "object",
+    "definitions": {
+        "attachmentLoadOp": {
+            "type": "string",
+            "enum": [
+                "VK_ATTACHMENT_LOAD_OP_LOAD",
+                "VK_ATTACHMENT_LOAD_OP_CLEAR",
+                "VK_ATTACHMENT_LOAD_OP_DONT_CARE"
+            ]
+        },
+        "attachmentStoreOp": {
+            "type": "string",
+            "enum": [
+                "VK_ATTACHMENT_STORE_OP_STORE",
+                "VK_ATTACHMENT_STORE_OP_DONT_CARE"
+            ]
+        }
+    },
+    "properties": {
+        "uri": {
+            "$ref": "uri.schema.json"
+        },
+        "format": {
+            "$ref": "format.schema.json"
+        },
+        "samples": {
+            "$ref": "sampleCount.schema.json"
+        },
+        "loadOp": {
+            "$ref": "#/definitions/attachmentLoadOp"
+        },
+        "storeOp": {
+            "$ref": "#/definitions/attachmentStoreOp"
+        },
+        "stencilLoadOp": {
+            "$ref": "#/definitions/attachmentLoadOp"
+        },
+        "stencilStoreOp": {
+            "$ref": "#/definitions/attachmentStoreOp"
+        },
+        "initialLayout": {
+            "$ref": "imageLayout.schema.json"
+        },
+        "finalLayout": {
+            "$ref": "imageLayout.schema.json"
+        }
+    },
+    "required":[
+        "uri",
+        "format",
+        "samples",
+        "loadOp",
+        "storeOp",
+        "stencilLoadOp",
+        "stencilStoreOp",
+        "initialLayout",
+        "finalLayout"
+    ]
+}

@@ -9,7 +9,7 @@
         "attachments": {
             "type": "array",
             "items": {
-                "oneOf":[
+                "oneOf": [
                     {
                         "$ref": "attachmentDescription.schema.json"
                     },
@@ -22,7 +22,7 @@
         "subpasses": {
             "type": "array",
             "items": {
-                "oneOf":[
+                "oneOf": [
                     {
                         "$ref": "subpassDescription.schema.json"
                     },
@@ -35,7 +35,7 @@
         "dependencies": {
             "type": "array",
             "items": {
-                "oneOf":[
+                "oneOf": [
                     {
                         "$ref": "subpassDependency.schema.json"
                     },
@@ -46,7 +46,7 @@
             }
         }
     },
-    "required":[
+    "required": [
         "uri",
         "attachments",
         "subpasses",

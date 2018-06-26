@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/subpassDependency.schema.json",
+    "type": "object",
+    "properties": {
+        "srcSubpass": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "dstSubpass": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "srcStageMask": {
+            "type": "array",
+            "items": {
+                "$ref": "pipelineStageFlag.schema.json"
+            },
+            "uniqueItems": true
+        },
+        "dstStageMask": {
+            "type": "array",
+            "items": {
+                "$ref": "pipelineStageFlag.schema.json"
+            },
+            "uniqueItems": true
+        },
+        "srcAccessMask": {
+            "type": "array",
+            "items": {
+                "$ref": "accessFlag.schema.json"
+            },
+            "uniqueItems": true
+        },
+        "dstAccessMask": {
+            "type": "array",
+            "items": {
+                "$ref": "accessFlag.schema.json"
+            },
+            "uniqueItems": true
+        },
+        "dependencyFlags": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "VK_DEPENDENCY_BY_REGION_BIT",
+                    "VK_DEPENDENCY_DEVICE_GROUP_BIT",
+                    "VK_DEPENDENCY_VIEW_LOCAL_BIT",
+                    "VK_DEPENDENCY_VIEW_LOCAL_BIT_KHR",
+                    "VK_DEPENDENCY_DEVICE_GROUP_BIT_KHR"
+                ]
+            },
+            "uniqueItems": true
+        }
+    },
+    "required": [
+        "uri",
+        "srcSubpass",
+        "dstSubpass",
+        "srcStageMask",
+        "dstStageMask",
+        "srcAccessMask",
+        "dstAccessMask",
+        "dependencyFlags"
+    ]
+}
