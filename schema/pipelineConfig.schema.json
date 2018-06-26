@@ -95,7 +95,6 @@
         "shaderStageConfigs",
         "vertexInputConfig",
         "inputAssemblyConfig",
-        "tesselationConfig",
         "viewportConfig",
         "rasterizationConfig",
         "depthStencilConfig"
