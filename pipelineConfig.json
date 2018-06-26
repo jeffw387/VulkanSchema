@@ -1,5 +1,5 @@
 {
-    "$schema": "https://rawgit.com/jeffw387/VulkanSchema/master/schema/rasterizationConfig.schema.json",
+    "$schema": "https://rawgit.com/jeffw387/VulkanSchema/master/schema/pipelineConfig.schema.json",
     "uri": "0",
     "shaderStageConfigs": [
         {
@@ -11,9 +11,32 @@
     "inputAssemblyConfig": "",
     "tesselationConfig": "",
     "viewportConfig": "",
-    "rasterizationConfig": "",
+    "rasterizationConfig": {
+        "uri": "2",
+        "depthClampEnable": false,
+        "rasterizerDiscardEnable": false,
+        "polygonMode": "VK_POLYGON_MODE_FILL",
+        "cullMode": "VK_CULL_MODE_BACK_BIT",
+        "frontFace": "VK_FRONT_FACE_COUNTER_CLOCKWISE",
+        "depthBiasEnable": false,
+        "depthBiasConstantFactor": 0,
+        "depthBiasClamp": 0,
+        "depthBiasSlopeFactor": 0,
+        "lineWidth": 1
+    },
     "multisamplingConfig": "",
-    "depthStencilConfig": "",
+    "depthStencilConfig": {
+        "uri": "3",
+        "depthTestEnable": true,
+        "depthWriteEnable": true,
+        "depthCompareOp": "VK_COMPARE_OP_GREATER",
+        "depthBoundsTestEnable": false,
+        "stencilTestEnable": false,
+        "front": "",
+        "back": "",
+        "minDepthBounds": 0,
+        "maxDepthBounds": 1
+    },
     "colorBlendConfig": "",
     "dynamicStateConfig": [],
     "pipelineLayoutConfig": "",
