@@ -50,7 +50,8 @@
             "type": "number"
         },
         "lineWidth": {
-            "type": "number"
+            "type": "number",
+            "minimum": 0
         }
     },
     "required": [
