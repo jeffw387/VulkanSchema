@@ -1,0 +1,143 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/colorBlendAttachmentConfig.schema.json",
+    "type": "object",
+    "definitions": {
+        "blendFactor": {
+            "type": "string",
+            "enum": [
+                "VK_BLEND_FACTOR_ZERO",
+                "VK_BLEND_FACTOR_ONE",
+                "VK_BLEND_FACTOR_SRC_COLOR",
+                "VK_BLEND_FACTOR_ONE_MINUS_SRC_COLOR",
+                "VK_BLEND_FACTOR_DST_COLOR",
+                "VK_BLEND_FACTOR_ONE_MINUS_DST_COLOR",
+                "VK_BLEND_FACTOR_SRC_ALPHA",
+                "VK_BLEND_FACTOR_ONE_MINUS_SRC_ALPHA",
+                "VK_BLEND_FACTOR_DST_ALPHA",
+                "VK_BLEND_FACTOR_ONE_MINUS_DST_ALPHA",
+                "VK_BLEND_FACTOR_CONSTANT_COLOR",
+                "VK_BLEND_FACTOR_ONE_MINUS_CONSTANT_COLOR",
+                "VK_BLEND_FACTOR_CONSTANT_ALPHA",
+                "VK_BLEND_FACTOR_ONE_MINUS_CONSTANT_ALPHA",
+                "VK_BLEND_FACTOR_SRC_ALPHA_SATURATE",
+                "VK_BLEND_FACTOR_SRC1_COLOR",
+                "VK_BLEND_FACTOR_ONE_MINUS_SRC1_COLOR",
+                "VK_BLEND_FACTOR_SRC1_ALPHA",
+                "VK_BLEND_FACTOR_ONE_MINUS_SRC1_ALPHA"
+            ]
+        },
+        "blendOp": {
+            "type": "string",
+            "enum": [
+                "VK_BLEND_OP_ADD",
+                "VK_BLEND_OP_SUBTRACT",
+                "VK_BLEND_OP_REVERSE_SUBTRACT",
+                "VK_BLEND_OP_MIN",
+                "VK_BLEND_OP_MAX",
+                "VK_BLEND_OP_ZERO_EXT",
+                "VK_BLEND_OP_SRC_EXT",
+                "VK_BLEND_OP_DST_EXT",
+                "VK_BLEND_OP_SRC_OVER_EXT",
+                "VK_BLEND_OP_DST_OVER_EXT",
+                "VK_BLEND_OP_SRC_IN_EXT",
+                "VK_BLEND_OP_DST_IN_EXT",
+                "VK_BLEND_OP_SRC_OUT_EXT",
+                "VK_BLEND_OP_DST_OUT_EXT",
+                "VK_BLEND_OP_SRC_ATOP_EXT",
+                "VK_BLEND_OP_DST_ATOP_EXT",
+                "VK_BLEND_OP_XOR_EXT",
+                "VK_BLEND_OP_MULTIPLY_EXT",
+                "VK_BLEND_OP_SCREEN_EXT",
+                "VK_BLEND_OP_OVERLAY_EXT",
+                "VK_BLEND_OP_DARKEN_EXT",
+                "VK_BLEND_OP_LIGHTEN_EXT",
+                "VK_BLEND_OP_COLORDODGE_EXT",
+                "VK_BLEND_OP_COLORBURN_EXT",
+                "VK_BLEND_OP_HARDLIGHT_EXT",
+                "VK_BLEND_OP_SOFTLIGHT_EXT",
+                "VK_BLEND_OP_DIFFERENCE_EXT",
+                "VK_BLEND_OP_EXCLUSION_EXT",
+                "VK_BLEND_OP_INVERT_EXT",
+                "VK_BLEND_OP_INVERT_RGB_EXT",
+                "VK_BLEND_OP_LINEARDODGE_EXT",
+                "VK_BLEND_OP_LINEARBURN_EXT",
+                "VK_BLEND_OP_VIVIDLIGHT_EXT",
+                "VK_BLEND_OP_LINEARLIGHT_EXT",
+                "VK_BLEND_OP_PINLIGHT_EXT",
+                "VK_BLEND_OP_HARDMIX_EXT",
+                "VK_BLEND_OP_HSL_HUE_EXT",
+                "VK_BLEND_OP_HSL_SATURATION_EXT",
+                "VK_BLEND_OP_HSL_COLOR_EXT",
+                "VK_BLEND_OP_HSL_LUMINOSITY_EXT",
+                "VK_BLEND_OP_PLUS_EXT",
+                "VK_BLEND_OP_PLUS_CLAMPED_EXT",
+                "VK_BLEND_OP_PLUS_CLAMPED_ALPHA_EXT",
+                "VK_BLEND_OP_PLUS_DARKER_EXT",
+                "VK_BLEND_OP_MINUS_EXT",
+                "VK_BLEND_OP_MINUS_CLAMPED_EXT",
+                "VK_BLEND_OP_CONTRAST_EXT",
+                "VK_BLEND_OP_INVERT_OVG_EXT",
+                "VK_BLEND_OP_RED_EXT",
+                "VK_BLEND_OP_GREEN_EXT",
+                "VK_BLEND_OP_BLUE_EXT"
+            ]
+        }
+    },
+    "properties": {
+        "blendEnable": {
+            "type": "boolean"
+        },
+        "sourceColorBlendFactor": {
+            "$ref": "#/definitions/blendFactor"
+        },
+        "destinationColorBlendFactor": {
+            "$ref": "#/definitions/blendFactor"
+        },
+        "colorBlendOp": {
+            "$ref": "#/definitions/blendOp"
+        },
+        "sourceAlphaBlendFactor": {
+            "$ref": "#/definitions/blendFactor"
+        },
+        "destinationAlphaBlendFactor": {
+            "$ref": "#/definitions/blendFactor"
+        },
+        "alphaBlendOp": {
+            "$ref": "#/definitions/blendOp"
+        },
+        "colorWriteMask": {
+            "type": "object",
+            "properties": {
+                "R": {
+                    "type": "boolean"
+                },
+                "G": {
+                    "type": "boolean"
+                },
+                "B": {
+                    "type": "boolean"
+                },
+                "A": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "R",
+                "G",
+                "B",
+                "A"
+            ]
+        }
+    },
+    "required": [
+        "blendEnable",
+        "sourceColorBlendFactor",
+        "destinationColorBlendFactor",
+        "colorBlendOp",
+        "sourceAlphaBlendFactor",
+        "destinationAlphaBlendFactor",
+        "alphaBlendOp",
+        "colorWriteMask"
+    ]
+}

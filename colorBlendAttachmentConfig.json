@@ -1,13 +1,14 @@
 {
-    "uri": "",
-    "BlendEnable": false,
-    "SourceColorBlendFactor": "",
-    "DestinationColorBlendFactor": "",
-    "ColorBlendOp": "",
-    "SourceAlphaBlendFactor": "",
-    "DestinationAlphaBlendFactor": "",
-    "AlphaBlendOp": "",
-    "ColorWriteMask":
+    "$schema": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/colorBlendAttachmentConfig.schema.json",
+    "uri": "colorBlendAttachmentConfig.json",
+    "blendEnable": false,
+    "sourceColorBlendFactor": "",
+    "destinationColorBlendFactor": "",
+    "colorBlendOp": "",
+    "sourceAlphaBlendFactor": "",
+    "destinationAlphaBlendFactor": "",
+    "alphaBlendOp": "",
+    "colorWriteMask":
     {
         "R": false,
         "G": false,

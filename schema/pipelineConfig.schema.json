@@ -88,6 +88,16 @@
                     "$ref": "uri.schema.json"
                 }
             ]
+        },
+        "colorBlendConfig": {
+            "oneOf":[
+                {
+                    "$ref": "colorBlendConfig.schema.json"
+                },
+                {
+                    "$ref": "uri.schema.json"
+                }
+            ]
         }
     },
     "required": [

@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/colorBlendConfig.schema.json",
+    "type": "object",
+    "properties": {
+        "uri": {
+            "$ref": "uri.schema.json"
+        },
+        "logicOpEnable": {
+            "type": "boolean"
+        },
+        "logicOp": {
+            "$ref": "logicOp.schema.json"
+        },
+        "colorBlendAttachments": {
+            "type": "array",
+            "items": {
+                "$ref": "colorBlendAttachmentConfig.schema.json"
+            }
+        },
+        "blendConstants": {
+            "type": "array",
+            "items": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+            },
+            "minItems": 4,
+            "maxItems": 4
+        }
+    },
+    "required": [
+        "uri",
+        "logicOpEnable",
+        "logicOp",
+        "colorBlendAttachments",
+        "blendConstants"
+    ]
+}
