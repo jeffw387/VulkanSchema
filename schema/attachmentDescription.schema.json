@@ -4,18 +4,20 @@
     "type": "object",
     "definitions": {
         "attachmentLoadOp": {
-            "type": "string",
+            "type": "integer",
+            "description": "typedef enum VkAttachmentLoadOp {\nVK_ATTACHMENT_LOAD_OP_LOAD = 0,\nVK_ATTACHMENT_LOAD_OP_CLEAR = 1,\nVK_ATTACHMENT_LOAD_OP_DONT_CARE = 2,\n} VkAttachmentLoadOp;",
             "enum": [
-                "VK_ATTACHMENT_LOAD_OP_LOAD",
-                "VK_ATTACHMENT_LOAD_OP_CLEAR",
-                "VK_ATTACHMENT_LOAD_OP_DONT_CARE"
+                0,
+                1,
+                2
             ]
         },
         "attachmentStoreOp": {
-            "type": "string",
+            "type": "integer",
+            "description": "typedef enum VkAttachmentStoreOp {\nVK_ATTACHMENT_STORE_OP_STORE = 0,\nVK_ATTACHMENT_STORE_OP_DONT_CARE = 1,\n} VkAttachmentStoreOp;",
             "enum": [
-                "VK_ATTACHMENT_STORE_OP_STORE",
-                "VK_ATTACHMENT_STORE_OP_DONT_CARE"
+                0,
+                1
             ]
         }
     },

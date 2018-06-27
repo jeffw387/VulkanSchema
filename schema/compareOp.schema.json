@@ -1,15 +1,16 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/compareOp.schema.json",
-            "type": "string",
-            "enum": [
-                "VK_COMPARE_OP_NEVER",
-                "VK_COMPARE_OP_LESS",
-                "VK_COMPARE_OP_EQUAL",
-                "VK_COMPARE_OP_LESS_OR_EQUAL",
-                "VK_COMPARE_OP_GREATER",
-                "VK_COMPARE_OP_NOT_EQUAL",
-                "VK_COMPARE_OP_GREATER_OR_EQUAL",
-                "VK_COMPARE_OP_ALWAYS"
-            ]
-        }
+    "type": "integer",
+    "description": "typedef enum VkCompareOp {\nVK_COMPARE_OP_NEVER = 0,\nVK_COMPARE_OP_LESS = 1,\nVK_COMPARE_OP_EQUAL = 2,\nVK_COMPARE_OP_LESS_OR_EQUAL = 3,\nVK_COMPARE_OP_GREATER = 4,\nVK_COMPARE_OP_NOT_EQUAL = 5,\nVK_COMPARE_OP_GREATER_OR_EQUAL = 6,\nVK_COMPARE_OP_ALWAYS = 7,\n} VkCompareOp;",
+    "enum": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+    ]
+}
