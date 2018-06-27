@@ -1,14 +1,15 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/sampleCount.schema.json",
-    "type": "string",
+    "type": "integer",
+    "description": "typedef enum VkSampleCountFlagBits {\nVK_SAMPLE_COUNT_1_BIT = 0x00000001,\nVK_SAMPLE_COUNT_2_BIT = 0x00000002,\nVK_SAMPLE_COUNT_4_BIT = 0x00000004,\nVK_SAMPLE_COUNT_8_BIT = 0x00000008,\nVK_SAMPLE_COUNT_16_BIT = 0x00000010,\nVK_SAMPLE_COUNT_32_BIT = 0x00000020,\nVK_SAMPLE_COUNT_64_BIT = 0x00000040,\n} VkSampleCountFlagBits;",
     "enum": [
-        "VK_SAMPLE_COUNT_1_BIT",
-        "VK_SAMPLE_COUNT_2_BIT",
-        "VK_SAMPLE_COUNT_4_BIT",
-        "VK_SAMPLE_COUNT_8_BIT",
-        "VK_SAMPLE_COUNT_16_BIT",
-        "VK_SAMPLE_COUNT_32_BIT",
-        "VK_SAMPLE_COUNT_64_BIT"
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
     ]
 }
