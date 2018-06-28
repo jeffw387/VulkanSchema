@@ -42,13 +42,12 @@
         "dependencyFlags": {
             "type": "array",
             "items": {
-                "type": "string",
+                "description": "typedef enum VkDependencyFlagBits {\nVK_DEPENDENCY_BY_REGION_BIT = 0x00000001,\nVK_DEPENDENCY_DEVICE_GROUP_BIT = 0x00000004,\nVK_DEPENDENCY_VIEW_LOCAL_BIT = 0x00000002,\nVK_DEPENDENCY_VIEW_LOCAL_BIT_KHR = VK_DEPENDENCY_VIEW_LOCAL_BIT,\nVK_DEPENDENCY_DEVICE_GROUP_BIT_KHR = VK_DEPENDENCY_DEVICE_GROUP_BIT,\n} VkDependencyFlagBits;",
+                "type": "integer",
                 "enum": [
-                    "VK_DEPENDENCY_BY_REGION_BIT",
-                    "VK_DEPENDENCY_DEVICE_GROUP_BIT",
-                    "VK_DEPENDENCY_VIEW_LOCAL_BIT",
-                    "VK_DEPENDENCY_VIEW_LOCAL_BIT_KHR",
-                    "VK_DEPENDENCY_DEVICE_GROUP_BIT_KHR"
+                    1,
+                    4,
+                    2
                 ]
             },
             "uniqueItems": true
