@@ -4,20 +4,21 @@
     "type": "object",
     "definitions": {
         "dynamicState": {
-            "type": "string",
+            "type": "integer",
+            "description": "\ntypedef enum VkDynamicState {\nVK_DYNAMIC_STATE_VIEWPORT = 0,\nVK_DYNAMIC_STATE_SCISSOR = 1,\nVK_DYNAMIC_STATE_LINE_WIDTH = 2,\nVK_DYNAMIC_STATE_DEPTH_BIAS = 3,\nVK_DYNAMIC_STATE_BLEND_CONSTANTS = 4,\nVK_DYNAMIC_STATE_DEPTH_BOUNDS = 5,\nVK_DYNAMIC_STATE_STENCIL_COMPARE_MASK = 6,\nVK_DYNAMIC_STATE_STENCIL_WRITE_MASK = 7,\nVK_DYNAMIC_STATE_STENCIL_REFERENCE = 8,\nVK_DYNAMIC_STATE_VIEWPORT_W_SCALING_NV = 1000087000,\nVK_DYNAMIC_STATE_DISCARD_RECTANGLE_EXT = 1000099000,\nVK_DYNAMIC_STATE_SAMPLE_LOCATIONS_EXT = 1000143000,\n} VkDynamicState;",
             "enum": [
-                "VK_DYNAMIC_STATE_VIEWPORT",
-                "VK_DYNAMIC_STATE_SCISSOR",
-                "VK_DYNAMIC_STATE_LINE_WIDTH",
-                "VK_DYNAMIC_STATE_DEPTH_BIAS",
-                "VK_DYNAMIC_STATE_BLEND_CONSTANTS",
-                "VK_DYNAMIC_STATE_DEPTH_BOUNDS",
-                "VK_DYNAMIC_STATE_STENCIL_COMPARE_MASK",
-                "VK_DYNAMIC_STATE_STENCIL_WRITE_MASK",
-                "VK_DYNAMIC_STATE_STENCIL_REFERENCE",
-                "VK_DYNAMIC_STATE_VIEWPORT_W_SCALING_NV",
-                "VK_DYNAMIC_STATE_DISCARD_RECTANGLE_EXT",
-                "VK_DYNAMIC_STATE_SAMPLE_LOCATIONS_EXT"
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                1000087000,
+                1000099000,
+                1000143000
             ]
         }
     },
@@ -135,7 +136,7 @@
             ]
         },
         "renderPassConfig": {
-            "oneOf":[
+            "oneOf": [
                 {
                     "$ref": "renderPassConfig.schema.json"
                 },
