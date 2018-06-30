@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/logicOp.schema.json",
-    "type": "string",
+    "type": "integer",
     "description": "typedef enum VkLogicOp {\nVK_LOGIC_OP_CLEAR = 0,\nVK_LOGIC_OP_AND = 1,\nVK_LOGIC_OP_AND_REVERSE = 2,\nVK_LOGIC_OP_COPY = 3,\nVK_LOGIC_OP_AND_INVERTED = 4,\nVK_LOGIC_OP_NO_OP = 5,\nVK_LOGIC_OP_XOR = 6,\nVK_LOGIC_OP_OR = 7,\nVK_LOGIC_OP_NOR = 8,\nVK_LOGIC_OP_EQUIVALENT = 9,\nVK_LOGIC_OP_INVERT = 10,\nVK_LOGIC_OP_OR_REVERSE = 11,\nVK_LOGIC_OP_COPY_INVERTED = 12,\nVK_LOGIC_OP_OR_INVERTED = 13,\nVK_LOGIC_OP_NAND = 14,\nVK_LOGIC_OP_SET = 15,\n} VkLogicOp;",
     "enum": [
         0,
