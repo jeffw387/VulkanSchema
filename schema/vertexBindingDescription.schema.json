@@ -16,8 +16,8 @@
             "description": "typedef enum VkVertexInputRate {\nVK_VERTEX_INPUT_RATE_VERTEX = 0,\nVK_VERTEX_INPUT_RATE_INSTANCE = 1,\n} VkVertexInputRate;",
             "type": "integer",
             "enum": [
-                "0",
-                "1"
+                0,
+                1
             ]
         }
     },
