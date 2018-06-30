@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/sharingMode.schema.json",
+    "description": "/ntypedef enum VkSharingMode {/nVK_SHARING_MODE_EXCLUSIVE = 0,/nVK_SHARING_MODE_CONCURRENT = 1,/n} VkSharingMode;",
+    "type": "integer",
+    "enum": [
+        0,
+        1
+    ]
+}

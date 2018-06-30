@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/surfaceTransform.schema.json",
+    "description": "/ntypedef enum VkSurfaceTransformFlagBitsKHR {/nVK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR = 0x00000001,/nVK_SURFACE_TRANSFORM_ROTATE_90_BIT_KHR = 0x00000002,/nVK_SURFACE_TRANSFORM_ROTATE_180_BIT_KHR = 0x00000004,/nVK_SURFACE_TRANSFORM_ROTATE_270_BIT_KHR = 0x00000008,/nVK_SURFACE_TRANSFORM_HORIZONTAL_MIRROR_BIT_KHR = 0x00000010,/nVK_SURFACE_TRANSFORM_HORIZONTAL_MIRROR_ROTATE_90_BIT_KHR = 0x00000020,/nVK_SURFACE_TRANSFORM_HORIZONTAL_MIRROR_ROTATE_180_BIT_KHR = 0x00000040,/nVK_SURFACE_TRANSFORM_HORIZONTAL_MIRROR_ROTATE_270_BIT_KHR = 0x00000080,/nVK_SURFACE_TRANSFORM_INHERIT_BIT_KHR = 0x00000100,/n} VkSurfaceTransformFlagBitsKHR;",
+    "type": "integer",
+    "enum": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+    ]
+}

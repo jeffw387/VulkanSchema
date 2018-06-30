@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/compositeAlpha.schema.json",
+    "description": "\ntypedef enum VkCompositeAlphaFlagBitsKHR {\nVK_COMPOSITE_ALPHA_OPAQUE_BIT_KHR = 0x00000001,\nVK_COMPOSITE_ALPHA_PRE_MULTIPLIED_BIT_KHR = 0x00000002,\nVK_COMPOSITE_ALPHA_POST_MULTIPLIED_BIT_KHR = 0x00000004,\nVK_COMPOSITE_ALPHA_INHERIT_BIT_KHR = 0x00000008,\n} VkCompositeAlphaFlagBitsKHR;",
+    "type": "integer",
+    "enum": [
+        1,
+        2,
+        4,
+        8
+    ]
+}

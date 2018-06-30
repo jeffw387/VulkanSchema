@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/imageUse.schema.json",
+    "description": "/ntypedef enum VkImageUsageFlagBits {/nVK_IMAGE_USAGE_TRANSFER_SRC_BIT = 0x00000001,/nVK_IMAGE_USAGE_TRANSFER_DST_BIT = 0x00000002,/nVK_IMAGE_USAGE_SAMPLED_BIT = 0x00000004,/nVK_IMAGE_USAGE_STORAGE_BIT = 0x00000008,/nVK_IMAGE_USAGE_COLOR_ATTACHMENT_BIT = 0x00000010,/nVK_IMAGE_USAGE_DEPTH_STENCIL_ATTACHMENT_BIT = 0x00000020,/nVK_IMAGE_USAGE_TRANSIENT_ATTACHMENT_BIT = 0x00000040,/nVK_IMAGE_USAGE_INPUT_ATTACHMENT_BIT = 0x00000080,/n} VkImageUsageFlagBits;",
+    "type": "integer",
+    "enum": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128
+    ]
+}

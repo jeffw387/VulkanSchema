@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/swapchainConfig.schema.json",
+    "type": "object",
+    "properties": {
+        "minImageCount": {
+            "type": "integer"
+        },
+        "format": {
+            "$ref": "format.schema.json"
+        },
+        "imageColorSpace": {
+            "$ref": "colorSpace.schema.json"
+        },
+        "imageExtent": {
+            "$ref": "extent2D.schema.json"
+        },
+        "imageArrayLayers": {
+            "type": "integer"
+        },
+        "imageUsage": {
+            "$ref": "imageUse.schema.json"
+        },
+        "preTransform": {
+            "$ref": "surfaceTransform.schema.json"
+        },
+        "compositeAlpha": {
+            "$ref": "compositeAlpha.schema.json"
+        },
+        "presentMode": {
+            "$ref": "presentMode.schema.json"
+        },
+        "clipped": {
+            "type": "boolean"
+        }
+    }
+}
