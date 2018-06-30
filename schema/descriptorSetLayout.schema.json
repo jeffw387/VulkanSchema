@@ -13,8 +13,8 @@
         "descriptorSetLayoutBinding": {
             "type": "object",
             "properties": {
-                "uri": {
-                    "$ref": "uri.schema.json"
+                "jsonID": {
+                    "$ref": "jsonID.schema.json"
                 },
                 "binding": {
                     "type": "integer",
@@ -57,8 +57,8 @@
         }
     },
     "properties": {
-        "uri": {
-            "$ref": "uri.schema.json"
+        "jsonID": {
+            "$ref": "jsonID.schema.json"
         },
         "flags": {
             "type": "array",

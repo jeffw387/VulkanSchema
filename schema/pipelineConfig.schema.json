@@ -23,8 +23,8 @@
         }
     },
     "properties": {
-        "uri": {
-            "$ref": "uri.schema.json"
+        "jsonID": {
+            "$ref": "jsonID.schema.json"
         },
         "shaderStageConfigs": {
             "type": "array",
@@ -34,7 +34,7 @@
                         "$ref": "shaderStageConfig.schema.json"
                     },
                     {
-                        "$ref": "uri.schema.json"
+                        "$ref": "jsonID.schema.json"
                     }
                 ]
             }
@@ -45,7 +45,7 @@
                     "$ref": "vertexInputConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "jsonID.schema.json"
                 }
             ]
         },
@@ -55,7 +55,7 @@
                     "$ref": "inputAssemblyConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "jsonID.schema.json"
                 }
             ]
         },
@@ -65,7 +65,7 @@
                     "$ref": "tesselationConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "jsonID.schema.json"
                 }
             ]
         },
@@ -75,7 +75,7 @@
                     "$ref": "viewportConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "jsonID.schema.json"
                 }
             ]
         },
@@ -85,7 +85,7 @@
                     "$ref": "rasterizationConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "jsonID.schema.json"
                 }
             ]
         },
@@ -95,7 +95,7 @@
                     "$ref": "multisampleConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "jsonID.schema.json"
                 }
             ]
         },
@@ -105,7 +105,7 @@
                     "$ref": "depthStencilConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "jsonID.schema.json"
                 }
             ]
         },
@@ -115,7 +115,7 @@
                     "$ref": "colorBlendConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "jsonID.schema.json"
                 }
             ]
         },
@@ -131,7 +131,7 @@
                     "$ref": "pipelineLayoutConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "jsonID.schema.json"
                 }
             ]
         },
@@ -141,7 +141,7 @@
                     "$ref": "renderPassConfig.schema.json"
                 },
                 {
-                    "$ref": "uri.schema.json"
+                    "$ref": "jsonID.schema.json"
                 }
             ]
         },
@@ -151,7 +151,7 @@
         }
     },
     "required": [
-        "uri",
+        "jsonID",
         "shaderStageConfigs",
         "vertexInputConfig",
         "inputAssemblyConfig",

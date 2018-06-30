@@ -54,7 +54,7 @@
         }
     },
     "required": [
-        "uri",
+        "jsonID",
         "srcSubpass",
         "dstSubpass",
         "srcStageMask",

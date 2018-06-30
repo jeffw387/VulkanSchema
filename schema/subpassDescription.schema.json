@@ -6,8 +6,8 @@
         "attachmentReference": {
             "type": "object",
             "properties": {
-                "uri": {
-                    "$ref": "uri.schema.json"
+                "jsonID": {
+                    "$ref": "jsonID.schema.json"
                 },
                 "attachment": {
                     "type": "integer",
@@ -18,15 +18,15 @@
                 }
             },
             "required": [
-                "uri",
+                "jsonID",
                 "attachment",
                 "layout"
             ]
         }
     },
     "properties": {
-        "uri": {
-            "$ref": "uri.schema.json"
+        "jsonID": {
+            "$ref": "jsonID.schema.json"
         },
         "pipelineBindPoint": {
             "$ref": "pipelineBindPoint.schema.json"
@@ -67,7 +67,7 @@
         }
     },
     "required": [
-        "uri",
+        "jsonID",
         "pipelineBindPoint",
         "inputAttachments",
         "colorAttachments",

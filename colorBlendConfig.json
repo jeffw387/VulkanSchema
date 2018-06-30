@@ -1,6 +1,6 @@
 {
     "$schema": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/colorBlendConfig.schema.json",
-    "uri": "",
+    "jsonID": "",
     "logicOpEnable": false,
     "logicOp": "",
     "colorBlendAttachments": [],

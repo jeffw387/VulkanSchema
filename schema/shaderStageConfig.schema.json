@@ -4,8 +4,8 @@
     "type": "object",
     "description": "Shader Stage Config",
     "properties": {
-        "uri": {
-            "$ref": "uri.schema.json"
+        "jsonID": {
+            "$ref": "jsonID.schema.json"
         },
         "shaderStage": {
             "$ref": "shaderStage.schema.json"
@@ -25,14 +25,14 @@
                         "$ref": "specializationMapEntry.schema.json"
                     },
                     {
-                        "$ref": "uri.schema.json"
+                        "$ref": "jsonID.schema.json"
                     }
                 ]
             }
         }
     },
     "required": [
-        "uri",
+        "jsonID",
         "shaderStage",
         "module",
         "name"

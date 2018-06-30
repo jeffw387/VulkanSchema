@@ -3,8 +3,8 @@
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/vertexAttributeDescription.schema.json",
     "type": "object",
     "properties": {
-        "uri": {
-            "$ref": "uri.schema.json"
+        "jsonID": {
+            "$ref": "jsonID.schema.json"
         },
         "location": {
             "type": "integer"
@@ -20,7 +20,7 @@
         }
     },
     "required": [
-        "uri",
+        "jsonID",
         "location",
         "binding",
         "format",

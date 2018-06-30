@@ -1,7 +1,0 @@
-{
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/uri.schema.json",
-    "type": "string",
-    "minLength": 1,
-    "description": "uri: A unique identifier per json instance"
-}

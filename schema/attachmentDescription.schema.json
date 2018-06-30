@@ -22,8 +22,8 @@
         }
     },
     "properties": {
-        "uri": {
-            "$ref": "uri.schema.json"
+        "jsonID": {
+            "$ref": "jsonID.schema.json"
         },
         "format": {
             "$ref": "format.schema.json"
@@ -51,7 +51,7 @@
         }
     },
     "required":[
-        "uri",
+        "jsonID",
         "format",
         "samples",
         "loadOp",

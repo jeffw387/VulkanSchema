@@ -3,8 +3,8 @@
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/depthStencilConfig.schema.json",
     "type": "object",
     "properties": {
-        "uri": {
-            "$ref": "uri.schema.json"
+        "jsonID": {
+            "$ref": "jsonID.schema.json"
         },
         "depthTestEnable": {
             "type": "boolean"
@@ -35,7 +35,7 @@
         }
     },
     "required": [
-        "uri",
+        "jsonID",
         "depthTestEnable",
         "depthWriteEnable",
         "depthCompareOp",
