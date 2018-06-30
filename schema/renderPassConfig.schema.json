@@ -9,40 +9,19 @@
         "attachments": {
             "type": "array",
             "items": {
-                "oneOf": [
-                    {
-                        "$ref": "attachmentDescription.schema.json"
-                    },
-                    {
-                        "$ref": "jsonID.schema.json"
-                    }
-                ]
+                "$ref": "attachmentDescription.schema.json"
             }
         },
         "subpasses": {
             "type": "array",
             "items": {
-                "oneOf": [
-                    {
-                        "$ref": "subpassDescription.schema.json"
-                    },
-                    {
-                        "$ref": "jsonID.schema.json"
-                    }
-                ]
+                "$ref": "subpassDescription.schema.json"
             }
         },
         "dependencies": {
             "type": "array",
             "items": {
-                "oneOf": [
-                    {
-                        "$ref": "subpassDependency.schema.json"
-                    },
-                    {
-                        "$ref": "jsonID.schema.json"
-                    }
-                ]
+                "$ref": "subpassDependency.schema.json"
             }
         }
     },

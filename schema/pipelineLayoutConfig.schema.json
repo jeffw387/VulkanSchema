@@ -7,29 +7,15 @@
             "$ref": "jsonID.schema.json"
         },
         "descriptorSetLayouts": {
-            "type":"array",
+            "type": "array",
             "items": {
-                "oneOf": [
-                    {
-                        "$ref": "descriptorSetLayout.schema.json"
-                    },
-                    {
-                        "$ref": "jsonID.schema.json"
-                    }
-                ]
+                "$ref": "descriptorSetLayout.schema.json"
             }
         },
         "pushConstantRanges": {
-            "type":"array",
+            "type": "array",
             "items": {
-                "oneOf": [
-                    {
-                        "$ref": "pushConstantRange.schema.json"
-                    },
-                    {
-                        "$ref": "jsonID.schema.json"
-                    }
-                ]
+                "$ref": "pushConstantRange.schema.json"
             }
         }
     },

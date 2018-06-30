@@ -9,27 +9,13 @@
         "vertexBindingDescriptions": {
             "type": "array",
             "items": {
-                "oneOf": [
-                    {
-                        "$ref": "vertexBindingDescription.schema.json"
-                    },
-                    {
-                        "$ref": "jsonID.schema.json"
-                    }
-                ]
+                "$ref": "vertexBindingDescription.schema.json"
             }
         },
         "vertexAttributeDescriptions": {
             "type": "array",
             "items": {
-                "oneOf": [
-                    {
-                        "$ref": "vertexAttributeDescription.schema.json"
-                    },
-                    {
-                        "$ref": "jsonID.schema.json"
-                    }
-                ]
+                "$ref": "vertexAttributeDescription.schema.json"
             }
         }
     },

@@ -29,95 +29,32 @@
         "shaderStageConfigs": {
             "type": "array",
             "items": {
-                "oneOf": [
-                    {
-                        "$ref": "shaderStageConfig.schema.json"
-                    },
-                    {
-                        "$ref": "jsonID.schema.json"
-                    }
-                ]
+                "$ref": "shaderStageConfig.schema.json"
             }
         },
         "vertexInputConfig": {
-            "oneOf": [
-                {
-                    "$ref": "vertexInputConfig.schema.json"
-                },
-                {
-                    "$ref": "jsonID.schema.json"
-                }
-            ]
+            "$ref": "vertexInputConfig.schema.json"
         },
         "inputAssemblyConfig": {
-            "oneOf": [
-                {
-                    "$ref": "inputAssemblyConfig.schema.json"
-                },
-                {
-                    "$ref": "jsonID.schema.json"
-                }
-            ]
+            "$ref": "inputAssemblyConfig.schema.json"
         },
         "tesselationConfig": {
-            "oneOf": [
-                {
-                    "$ref": "tesselationConfig.schema.json"
-                },
-                {
-                    "$ref": "jsonID.schema.json"
-                }
-            ]
+            "$ref": "tesselationConfig.schema.json"
         },
         "viewportConfig": {
-            "oneOf": [
-                {
-                    "$ref": "viewportConfig.schema.json"
-                },
-                {
-                    "$ref": "jsonID.schema.json"
-                }
-            ]
+            "$ref": "viewportConfig.schema.json"
         },
         "rasterizationConfig": {
-            "oneOf": [
-                {
-                    "$ref": "rasterizationConfig.schema.json"
-                },
-                {
-                    "$ref": "jsonID.schema.json"
-                }
-            ]
+            "$ref": "rasterizationConfig.schema.json"
         },
         "multisampleConfig": {
-            "oneOf": [
-                {
-                    "$ref": "multisampleConfig.schema.json"
-                },
-                {
-                    "$ref": "jsonID.schema.json"
-                }
-            ]
+            "$ref": "multisampleConfig.schema.json"
         },
         "depthStencilConfig": {
-            "oneOf": [
-                {
-                    "$ref": "depthStencilConfig.schema.json"
-                },
-                {
-                    "$ref": "jsonID.schema.json"
-                }
-            ]
+            "$ref": "depthStencilConfig.schema.json"
         },
         "colorBlendConfig": {
-            "oneOf": [
-                {
-                    "$ref": "colorBlendConfig.schema.json"
-                },
-                {
-                    "$ref": "jsonID.schema.json"
-                }
-            ]
+            "$ref": "colorBlendConfig.schema.json"
         },
         "dynamicStates": {
             "type": "array",
@@ -126,24 +63,10 @@
             }
         },
         "pipelineLayoutConfig": {
-            "oneOf": [
-                {
-                    "$ref": "pipelineLayoutConfig.schema.json"
-                },
-                {
-                    "$ref": "jsonID.schema.json"
-                }
-            ]
+            "$ref": "pipelineLayoutConfig.schema.json"
         },
         "renderPassConfig": {
-            "oneOf": [
-                {
-                    "$ref": "renderPassConfig.schema.json"
-                },
-                {
-                    "$ref": "jsonID.schema.json"
-                }
-            ]
+            "$ref": "renderPassConfig.schema.json"
         },
         "subpass": {
             "type": "integer",

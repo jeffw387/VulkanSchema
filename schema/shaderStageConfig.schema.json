@@ -20,14 +20,7 @@
         },
         "specializationMapEntries": {
             "items": {
-                "oneOf": [
-                    {
-                        "$ref": "specializationMapEntry.schema.json"
-                    },
-                    {
-                        "$ref": "jsonID.schema.json"
-                    }
-                ]
+                "$ref": "specializationMapEntry.schema.json"
             }
         }
     },
