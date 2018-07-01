@@ -50,7 +50,14 @@
             }
         },
         "depthStencilAttachment": {
-            "$ref": "#/definitions/attachmentReference"
+            "oneOf": [
+                {
+                    "type": "null"
+                },
+                {
+                    "$ref": "#/definitions/attachmentReference"
+                }
+            ]
         },
         "preserveAttachments": {
             "type": "array",
