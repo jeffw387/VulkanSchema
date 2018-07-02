@@ -62,7 +62,8 @@
         "preserveAttachments": {
             "type": "array",
             "items": {
-                "$ref": "#/definitions/attachmentReference"
+                "type": "integer",
+                "minimum": 0
             }
         }
     },
