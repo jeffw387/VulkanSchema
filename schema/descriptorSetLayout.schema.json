@@ -13,9 +13,6 @@
         "descriptorSetLayoutBinding": {
             "type": "object",
             "properties": {
-                "jsonID": {
-                    "$ref": "jsonID.schema.json"
-                },
                 "binding": {
                     "type": "integer",
                     "minimum": 0
@@ -53,7 +50,14 @@
                         "$ref": "samplerConfig.schema.json"
                     }
                 }
-            }
+            },
+            "required":[
+                "binding",
+                "descriptorType",
+                "descriptorCount",
+                "shaderStages",
+                "immutableSamplers"
+            ]
         }
     },
     "properties": {
