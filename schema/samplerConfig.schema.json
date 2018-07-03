@@ -45,6 +45,9 @@
         }
     },
     "properties": {
+        "jsonID": {
+            "$ref": "jsonID.schema.json"
+        },
         "magFilter": {
             "$ref": "#/definitions/filter"
         },
