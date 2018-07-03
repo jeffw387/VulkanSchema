@@ -6,9 +6,6 @@
         "attachmentReference": {
             "type": "object",
             "properties": {
-                "jsonID": {
-                    "$ref": "jsonID.schema.json"
-                },
                 "attachment": {
                     "type": "integer",
                     "minimum": 0
@@ -18,16 +15,12 @@
                 }
             },
             "required": [
-                "jsonID",
                 "attachment",
                 "layout"
             ]
         }
     },
     "properties": {
-        "jsonID": {
-            "$ref": "jsonID.schema.json"
-        },
         "pipelineBindPoint": {
             "$ref": "pipelineBindPoint.schema.json"
         },
@@ -68,7 +61,6 @@
         }
     },
     "required": [
-        "jsonID",
         "pipelineBindPoint",
         "inputAttachments",
         "colorAttachments",

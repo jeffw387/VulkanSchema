@@ -51,14 +51,6 @@
         }
     },
     "required":[
-        "jsonID",
-        "format",
-        "samples",
-        "loadOp",
-        "storeOp",
-        "stencilLoadOp",
-        "stencilStoreOp",
-        "initialLayout",
-        "finalLayout"
+        "jsonID"
     ]
 }

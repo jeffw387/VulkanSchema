@@ -3,9 +3,6 @@
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/inputAssemblyConfig.schema.json",
     "type": "object",
     "properties": {
-        "jsonID": {
-            "$ref": "jsonID.schema.json"
-        },
         "primitiveTopology": {
             "type": "integer",
             "description": "typedef enum VkPrimitiveTopology {\nVK_PRIMITIVE_TOPOLOGY_POINT_LIST = 0,\nVK_PRIMITIVE_TOPOLOGY_LINE_LIST = 1,\nVK_PRIMITIVE_TOPOLOGY_LINE_STRIP = 2,\nVK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST = 3,\nVK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP = 4,\nVK_PRIMITIVE_TOPOLOGY_TRIANGLE_FAN = 5,\nVK_PRIMITIVE_TOPOLOGY_LINE_LIST_WITH_ADJACENCY = 6,\nVK_PRIMITIVE_TOPOLOGY_LINE_STRIP_WITH_ADJACENCY = 7,\nVK_PRIMITIVE_TOPOLOGY_TRIANGLE_LIST_WITH_ADJACENCY = 8,\nVK_PRIMITIVE_TOPOLOGY_TRIANGLE_STRIP_WITH_ADJACENCY = 9,\nVK_PRIMITIVE_TOPOLOGY_PATCH_LIST = 10,\n} VkPrimitiveTopology;",
@@ -29,7 +26,6 @@
         }
     },
     "required": [
-        "jsonID",
         "primitiveTopology",
         "primitiveRestartEnable"
     ]

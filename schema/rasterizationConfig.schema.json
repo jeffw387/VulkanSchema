@@ -58,16 +58,6 @@
         }
     },
     "required": [
-        "jsonID",
-        "depthClampEnable",
-        "rasterizerDiscardEnable",
-        "polygonMode",
-        "cullMode",
-        "frontFace",
-        "depthBiasEnable",
-        "depthBiasConstantFactor",
-        "depthBiasClamp",
-        "depthBiasSlopeFactor",
-        "lineWidth"
+        "jsonID"
     ]
 }

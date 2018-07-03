@@ -3,9 +3,6 @@
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/vertexBindingDescription.schema.json",
     "type": "object",
     "properties": {
-        "jsonID": {
-            "$ref": "jsonID.schema.json"
-        },
         "binding": {
             "type": "integer"
         },
@@ -22,7 +19,6 @@
         }
     },
     "required": [
-        "jsonID",
         "binding",
         "stride",
         "inputRate"

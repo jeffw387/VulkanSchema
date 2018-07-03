@@ -95,21 +95,6 @@
         }
     },
     "required": [
-        "jsonID",
-        "magFilter",
-        "minFilter",
-        "mipmapMode",
-        "addressModeU",
-        "addressModeV",
-        "addressModeW",
-        "mipLodBias",
-        "anisotropyEnable",
-        "maxAnisotropy",
-        "compareEnable",
-        "compareOp",
-        "minLod",
-        "maxLod",
-        "borderColor",
-        "unnormalizedCoordinates"
+        "jsonID"
     ]
 }

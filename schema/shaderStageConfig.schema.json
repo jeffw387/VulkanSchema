@@ -25,9 +25,6 @@
         }
     },
     "required": [
-        "jsonID",
-        "shaderStage",
-        "module",
-        "name"
+        "jsonID"
     ]
 }

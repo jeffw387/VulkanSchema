@@ -35,15 +35,6 @@
         }
     },
     "required": [
-        "jsonID",
-        "depthTestEnable",
-        "depthWriteEnable",
-        "depthCompareOp",
-        "depthBoundsTestEnable",
-        "stencilTestEnable",
-        "front",
-        "back",
-        "minDepthBounds",
-        "maxDepthBounds"
+        "jsonID"
     ]
 }

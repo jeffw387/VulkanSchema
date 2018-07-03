@@ -26,12 +26,6 @@
         }
     },
     "required": [
-        "jsonID",
-        "rasterizationSamples",
-        "sampleShadingEnable",
-        "minSampleShading",
-        "sampleMask",
-        "alphaToCoverageEnable",
-        "alphaToOneEnable"
+        "jsonID"
     ]
 }

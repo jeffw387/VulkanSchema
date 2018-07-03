@@ -24,9 +24,6 @@
         }
     },
     "required": [
-        "jsonID",
-        "shaderStages",
-        "offset",
-        "size"
+        "jsonID"
     ]
 }

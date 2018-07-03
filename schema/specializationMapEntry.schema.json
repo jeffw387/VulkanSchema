@@ -3,9 +3,6 @@
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/specializationMapEntry.schema.json",
     "type": "object",
     "properties": {
-        "jsonID": {
-            "$ref": "jsonID.schema.json"
-        },
         "constantID": {
             "type": "integer"
         },
@@ -17,7 +14,6 @@
         }
     },
     "required": [
-        "jsonID",
         "constantID",
         "offset",
         "size"

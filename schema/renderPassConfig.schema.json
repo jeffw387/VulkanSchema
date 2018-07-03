@@ -26,9 +26,6 @@
         }
     },
     "required": [
-        "jsonID",
-        "attachments",
-        "subpasses",
-        "dependencies"
+        "jsonID"
     ]
 }

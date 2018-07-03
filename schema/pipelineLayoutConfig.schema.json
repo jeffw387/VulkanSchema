@@ -20,8 +20,6 @@
         }
     },
     "required": [
-        "jsonID",
-        "descriptorSetLayouts",
-        "pushConstantRanges"
+        "jsonID"
     ]
 }
