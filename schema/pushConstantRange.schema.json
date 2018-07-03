@@ -6,7 +6,7 @@
         "jsonID": {
             "$ref": "jsonID.schema.json"
         },
-        "shaderStages": {
+        "stageFlags": {
             "type": "array",
             "items": {
                 "$ref": "shaderStage.schema.json"
