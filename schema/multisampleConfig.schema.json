@@ -3,9 +3,6 @@
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/multisampleConfig.schema.json",
     "type": "object",
     "properties": {
-        "jsonID": {
-            "$ref": "jsonID.schema.json"
-        },
         "rasterizationSamples": {
             "$ref": "sampleCount.schema.json"
         },
@@ -26,6 +23,11 @@
         }
     },
     "required": [
-        "jsonID"
+        "rasterizationSamples",
+        "sampleShadingEnable",
+        "minSampleShading",
+        "sampleMask",
+        "alphaToCoverageEnable",
+        "alphaToOneEnable"
     ]
 }
