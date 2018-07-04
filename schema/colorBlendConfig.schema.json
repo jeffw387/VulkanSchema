@@ -3,9 +3,6 @@
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/colorBlendConfig.schema.json",
     "type": "object",
     "properties": {
-        "jsonID": {
-            "$ref": "jsonID.schema.json"
-        },
         "logicOpEnable": {
             "type": "boolean"
         },
@@ -30,6 +27,9 @@
         }
     },
     "required": [
-        "jsonID"
+        "logicOpEnable",
+        "logicOp",
+        "colorBlendAttachments",
+        "blendConstants"
     ]
 }
