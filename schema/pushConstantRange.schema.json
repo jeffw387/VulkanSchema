@@ -3,9 +3,6 @@
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/pushConstantRange.schema.json",
     "type": "object",
     "properties": {
-        "jsonID": {
-            "$ref": "jsonID.schema.json"
-        },
         "stageFlags": {
             "type": "array",
             "items": {
@@ -24,6 +21,8 @@
         }
     },
     "required": [
-        "jsonID"
+        "stageFlags",
+        "offset",
+        "size"
     ]
 }
