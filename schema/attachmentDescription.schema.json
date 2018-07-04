@@ -22,9 +22,6 @@
         }
     },
     "properties": {
-        "jsonID": {
-            "$ref": "jsonID.schema.json"
-        },
         "format": {
             "$ref": "format.schema.json"
         },
@@ -51,6 +48,13 @@
         }
     },
     "required":[
-        "jsonID"
+        "format",
+        "samples",
+        "loadOp",
+        "storeOp",
+        "stencilLoadOp",
+        "stencilStoreOp",
+        "initialLayout",
+        "finalLayout"
     ]
 }
