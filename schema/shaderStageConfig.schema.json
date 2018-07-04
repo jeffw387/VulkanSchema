@@ -4,15 +4,11 @@
     "type": "object",
     "description": "Shader Stage Config",
     "properties": {
-        "jsonID": {
-            "$ref": "jsonID.schema.json"
-        },
         "shaderStage": {
             "$ref": "shaderStage.schema.json"
         },
         "module": {
-            "type": "string",
-            "description": "Current intent would be the file name/path to the SPV."
+            "$ref": "shaderModule.schema.json"
         },
         "name": {
             "type": "string",
@@ -25,6 +21,9 @@
         }
     },
     "required": [
-        "jsonID"
+        "shaderStage",
+        "module",
+        "name",
+        "specializationMapEntries"
     ]
 }

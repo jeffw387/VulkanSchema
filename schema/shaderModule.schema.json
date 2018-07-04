@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/shaderModule.schema.json",
+    "type": "object",
+    "properties": {
+        "jsonID": {
+            "$ref": "jsonID.schema.json"
+        },
+        "path": {
+            "type": "string",
+            "description": "Path to the shader module."
+        }
+    }
+}
