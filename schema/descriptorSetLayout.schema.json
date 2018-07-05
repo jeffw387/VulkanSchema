@@ -38,7 +38,7 @@
                     "type": "integer",
                     "minimum": 0
                 },
-                "shaderStages": {
+                "stageFlags": {
                     "type": "array",
                     "items": {
                         "$ref": "shaderStage.schema.json"
@@ -55,7 +55,7 @@
                 "binding",
                 "descriptorType",
                 "descriptorCount",
-                "shaderStages",
+                "stageFlags",
                 "immutableSamplers"
             ]
         }
