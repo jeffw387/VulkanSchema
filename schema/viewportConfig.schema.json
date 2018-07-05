@@ -3,10 +3,6 @@
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/viewportConfig.schema.json",
     "type": "object",
     "properties": {
-        "viewportScissorCount": {
-            "type": "integer",
-            "minimum": 0
-        },
         "viewports": {
             "type":"array",
             "items": {
