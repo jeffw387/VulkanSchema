@@ -90,19 +90,19 @@
         "blendEnable": {
             "type": "boolean"
         },
-        "sourceColorBlendFactor": {
+        "srcColorBlendFactor": {
             "$ref": "#/definitions/blendFactor"
         },
-        "destinationColorBlendFactor": {
+        "dstColorBlendFactor": {
             "$ref": "#/definitions/blendFactor"
         },
         "colorBlendOp": {
             "$ref": "#/definitions/blendOp"
         },
-        "sourceAlphaBlendFactor": {
+        "srcAlphaBlendFactor": {
             "$ref": "#/definitions/blendFactor"
         },
-        "destinationAlphaBlendFactor": {
+        "dstAlphaBlendFactor": {
             "$ref": "#/definitions/blendFactor"
         },
         "alphaBlendOp": {
@@ -134,11 +134,11 @@
     },
     "required": [
         "blendEnable",
-        "sourceColorBlendFactor",
-        "destinationColorBlendFactor",
+        "srcColorBlendFactor",
+        "dstColorBlendFactor",
         "colorBlendOp",
-        "sourceAlphaBlendFactor",
-        "destinationAlphaBlendFactor",
+        "srcAlphaBlendFactor",
+        "dstAlphaBlendFactor",
         "alphaBlendOp",
         "colorWriteMask"
     ]

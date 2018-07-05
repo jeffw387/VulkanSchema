@@ -9,7 +9,7 @@
         "minImageCount": {
             "type": "integer"
         },
-        "format": {
+        "imageFormat": {
             "$ref": "format.schema.json"
         },
         "imageColorSpace": {
