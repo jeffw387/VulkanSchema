@@ -5,11 +5,11 @@
     "properties": {
         "srcSubpass": {
             "type": "integer",
-            "minimum": 0
+            "minimum": -1
         },
         "dstSubpass": {
             "type": "integer",
-            "minimum": 0
+            "minimum": -1
         },
         "srcStageMask": {
             "type": "array",
