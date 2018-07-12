@@ -23,9 +23,6 @@
         }
     },
     "properties": {
-        "jsonID": {
-            "$ref": "jsonID.schema.json"
-        },
         "shaderStageConfigs": {
             "type": "array",
             "items": {
@@ -72,8 +69,5 @@
             "type": "integer",
             "minimum": 0
         }
-    },
-    "required": [
-        "jsonID"
-    ]
+    }
 }

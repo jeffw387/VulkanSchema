@@ -61,9 +61,6 @@
         }
     },
     "properties": {
-        "jsonID": {
-            "$ref": "jsonID.schema.json"
-        },
         "flags": {
             "type": "array",
             "items": {

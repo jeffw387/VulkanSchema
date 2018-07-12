@@ -3,9 +3,6 @@
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/swapchainConfig.schema.json",
     "type": "object",
     "properties": {
-        "jsonID": {
-            "$ref": "jsonID.schema.json"
-        },
         "minImageCount": {
             "type": "integer"
         },
@@ -36,8 +33,5 @@
         "clipped": {
             "type": "boolean"
         }
-    },
-    "required":[
-        "jsonID"
-    ]
+    }
 }

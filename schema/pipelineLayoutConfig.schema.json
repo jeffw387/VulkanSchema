@@ -3,9 +3,6 @@
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/pipelineLayoutConfig.schema.json",
     "type": "object",
     "properties": {
-        "jsonID": {
-            "$ref": "jsonID.schema.json"
-        },
         "descriptorSetLayouts": {
             "type": "array",
             "items": {
@@ -18,8 +15,5 @@
                 "$ref": "pushConstantRange.schema.json"
             }
         }
-    },
-    "required": [
-        "jsonID"
-    ]
+    }
 }

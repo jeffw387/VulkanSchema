@@ -45,9 +45,6 @@
         }
     },
     "properties": {
-        "jsonID": {
-            "$ref": "jsonID.schema.json"
-        },
         "magFilter": {
             "$ref": "#/definitions/filter"
         },
@@ -93,8 +90,5 @@
         "unnormalizedCoordinates": {
             "type": "boolean"
         }
-    },
-    "required": [
-        "jsonID"
-    ]
+    }
 }
