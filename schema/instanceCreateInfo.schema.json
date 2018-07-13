@@ -2,7 +2,58 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/instanceCreateInfo.schema.json",
     "type": "object",
+    "definitions": {
+        "version": {
+            "type": "object",
+            "properties": {
+                "major": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "minor": {
+                    "type": "integer",
+                    "minimum": 0
+                },
+                "patch": {
+                    "type": "integer",
+                    "minimum": 0
+                }
+            },
+            "required":[
+                "major",
+                "minor",
+                "patch"
+            ]
+        }
+    },
     "properties": {
+        "applicationInfo": {
+            "type": "object",
+            "properties": {
+                "applicationName": {
+                    "type": "string"
+                },
+                "applicationVersion": {
+                    "$ref": "#/definitions/version"
+                },
+                "engineName": {
+                    "type": "string"
+                },
+                "engineVersion": {
+                    "$ref": "#/definitions/version"
+                },
+                "apiVersion": {
+                    "$ref": "#/definitions/version"
+                }
+            },
+            "required": [
+                "applicationName",
+                "applicationVersion",
+                "engineName",
+                "engineVersion",
+                "apiVersion"
+            ]
+        },
         "enabledLayers": {
             "type": "array",
             "items": {
@@ -16,7 +67,7 @@
             }
         }
     },
-    "required":[
+    "required": [
         "enabledLayers",
         "enabledExtensions"
     ]
