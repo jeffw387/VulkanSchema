@@ -8,9 +8,8 @@
             "items": {
                 "type":"object",
                 "properties": {
-                    "index": {
-                        "type":"integer",
-                        "minimum": 0
+                    "name": {
+                        "type":"string"
                     },
                     "vulkanType": {
                         "type":"string",
@@ -37,6 +36,7 @@
                     }
                 },
                 "required": [
+                    "name",
                     "vulkanType",
                     "path"
                 ]
@@ -48,12 +48,10 @@
                 "type": "object",
                 "properties": {
                     "start": {
-                        "type":"integer",
-                        "minimum": 0
+                        "type":"string"
                     },
                     "end": {
-                        "type":"integer",
-                        "minimum": 0
+                        "type":"string"
                     }
                 },
                 "required":[
