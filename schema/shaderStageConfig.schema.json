@@ -8,7 +8,12 @@
             "$ref": "shaderStage.schema.json"
         },
         "module": {
-            "$ref": "shaderModule.schema.json"
+            "type": "object",
+            "properties": {
+                "path": {
+                    "type": "string"
+                }
+            }
         },
         "name": {
             "type": "string",

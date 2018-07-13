@@ -1,0 +1,66 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/dependencyGraph.schema.json",
+    "type": "object",
+    "properties": {
+        "vertices": {
+            "type": "array",
+            "items": {
+                "type":"object",
+                "properties": {
+                    "index": {
+                        "type":"integer",
+                        "minimum": 0
+                    },
+                    "vulkanType": {
+                        "type":"string",
+                        "enum": [
+                            "Instance",
+			                "PhysicalDevice",
+			                "Surface",
+			                "Device",
+			                "RenderPass",
+			                "Swapchain",
+			                "ShaderModule",
+			                "DescriptorSetLayout",
+			                "DescriptorPool",
+			                "DescriptorSet",
+			                "PushConstantRange",
+			                "PipelineLayout",
+			                "Pipeline",
+			                "CommandPool",
+			                "CommandBuffer"
+                        ]
+                    },
+                    "path": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "vulkanType",
+                    "path"
+                ]
+            }
+        },
+        "edges": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "start": {
+                        "type":"integer",
+                        "minimum": 0
+                    },
+                    "end": {
+                        "type":"integer",
+                        "minimum": 0
+                    }
+                },
+                "required":[
+                    "start",
+                    "end"
+                ]
+            }
+        }
+    }
+}
