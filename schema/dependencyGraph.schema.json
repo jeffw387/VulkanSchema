@@ -51,7 +51,10 @@
                         "type":"string"
                     },
                     "end": {
-                        "type":"string"
+                        "type":"array",
+                        "items": {
+                            "type":"string"
+                        }
                     }
                 },
                 "required":[
