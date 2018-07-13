@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://gitcdn.xyz/repo/jeffw387/VulkanSchema/master/schema/instanceCreateInfo.schema.json",
+    "type": "object",
+    "properties": {
+        "enabledLayers": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "enabledExtensions": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required":[
+        "enabledLayers",
+        "enabledExtensions"
+    ]
+}
